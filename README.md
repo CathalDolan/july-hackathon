@@ -9,5 +9,4 @@
 As a user I should be able to select a coffee style drink
 As a user I should be able to select a snack
 As a user I should be able to set my collection time
-As a user I should be able to select delivery within a certain local area
 As a user I should be able to send my order via sending JSON
