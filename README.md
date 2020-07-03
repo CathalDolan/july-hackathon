@@ -41,3 +41,11 @@ The goal of this project is to create an application that allows customers of th
 * Ability to contact the through the contact form
 * Interact with the website on both Desktop tablet or mobile
 
+### User Stories
+
+* As a user I should be able to select a coffee style drink
+* As a user I should be able to select a snack
+* As a user I should be able to set my collection time
+* As a user I should be able to send my order via sending JSON
+* As a user i expect to see available coffees and snacks
+
