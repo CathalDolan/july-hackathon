@@ -2,11 +2,28 @@
 
 [View Live Project Here](###)
 
-**july-hackathon** is an application which allows users to send their order to their local coffee shop in advance of collect it.
+**july-hackathon** is an application used by local coffe shop called Yellow Bourbon to alow its customers to order coffee and snacks online and collect them in the shop.
 
-## User Stories
+# Contents :book:
 
-As a user I should be able to select a coffee style drink
-As a user I should be able to select a snack
-As a user I should be able to set my collection time
-As a user I should be able to send my order via sending JSON
+* UX
+  * Project Goals
+  * Target Audience Goals
+  * Site Owner Goals
+  * User Requirements and Expectations
+  * Design Choices
+      * Fonts
+      * Icons
+      * Colours
+      * Styling
+      * Images
+      * Backgrounds
+* Wireframes 
+* Features 
+  * Features that have been developed
+  * Features that will be implemented in the future
+* Technologies Used
+* Testing 
+* Bugs 
+* Deployment 
+* Credits
