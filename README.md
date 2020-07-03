@@ -43,9 +43,9 @@ The goal of this project is to create an application that allows customers of th
 
 ### User Stories
 
-* As a user I should be able to select a coffee style drink
+* As a user I should be able to select a coffee drink
 * As a user I should be able to select a snack
 * As a user I should be able to set my collection time
 * As a user I should be able to send my order via sending JSON
-* As a user i expect to see available coffees and snacks
+* As a user I expect to see all available coffees and snacks
 
