@@ -51,9 +51,16 @@ body {
 .form-input {
     width: 94%;
     border-radius: 3px;
-    resize: none;
 }
 
+#message-div {
+    height: 15rem;
+}
+
+#message {
+    height: 90%;
+    resize: none;
+}
 
 /*Location*/
 
