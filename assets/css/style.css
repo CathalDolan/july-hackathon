@@ -20,3 +20,9 @@ body {
     width: 50%;
     justify-content: center;
 }
+
+.location-wrapper {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+}
