@@ -62,7 +62,14 @@ body {
     resize: none;
 }
 
+.form-button {
+    background-color: rgb(242, 177, 10);
+    color: rgb(250, 250, 250);
+    border: 1px;
+    border-radius: 3px;
+    margin-bottom: 5px;
 
+}
 /*Location*/
 
 
