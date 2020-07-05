@@ -29,6 +29,12 @@ body {
     background-color: rgb(52, 52, 52);
 }
 
+.form {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
 .form-header {
     color:rgb(242, 177, 10);
     text-align: center;
@@ -36,9 +42,12 @@ body {
 
 .form-element {
     width: 90%;
-    padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
+}
+
+.form-input {
+    width: 90%;
 }
 
 
