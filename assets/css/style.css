@@ -14,3 +14,7 @@ body {
     border-top: rgb(242, 177, 10) solid 3px;
     border-bottom: rgb(242, 177, 10) solid 3px;
 }
+
+.contact-header {
+    align-self: center;
+}
