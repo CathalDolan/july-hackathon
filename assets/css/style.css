@@ -7,3 +7,10 @@ body {
     background-color: #fafafa;
     font-size: 1.6rem;
 }
+
+.contact-container {
+    display: flex;
+    width: 100%;
+    border-top: rgb(242, 177, 10) solid 3px;
+    border-bottom: rgb(242, 177, 10) solid 3px;
+}
