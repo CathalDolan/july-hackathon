@@ -21,6 +21,15 @@ body {
     justify-content: center;
 }
 
+.contact-form {
+    background-color: rgb(52, 52, 52);
+}
+
+.form-header {
+    color:rgb(242, 177, 10);
+    text-align: center;
+}
+
 .location-wrapper {
     display: flex;
     width: 50%;
