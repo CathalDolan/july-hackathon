@@ -18,4 +18,5 @@ body {
 .form-wrapper {
     display: flex;
     width: 50%;
+    justify-content: center;
 }
