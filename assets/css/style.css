@@ -10,11 +10,16 @@ body {
 
 .contact-container {
     display: flex;
+    justify-content: center;
     width: 100%;
     border-top: rgb(242, 177, 10) solid 3px;
     border-bottom: rgb(242, 177, 10) solid 3px;
 }
 
 .contact-header {
-    align-self: center;
+    font-size: 3.5rem;
+}
+.header-icon {
+    font-size: 4rem;
+    color:rgb(242, 177, 10);
 }
