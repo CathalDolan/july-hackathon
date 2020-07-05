@@ -15,6 +15,10 @@ body {
     border-bottom: rgb(242, 177, 10) solid 3px;
 }
 
+
+/*Form*/
+
+
 .form-wrapper {
     display: flex;
     width: 50%;
@@ -29,6 +33,17 @@ body {
     color:rgb(242, 177, 10);
     text-align: center;
 }
+
+.form-element {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+
+/*Location*/
+
 
 .location-wrapper {
     display: flex;
