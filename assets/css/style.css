@@ -10,8 +10,12 @@ body {
 
 .contact-container {
     display: flex;
-    justify-content: center;
     width: 100%;
     border-top: rgb(242, 177, 10) solid 3px;
     border-bottom: rgb(242, 177, 10) solid 3px;
+}
+
+.form-wrapper {
+    display: flex;
+    width: 50%;
 }
