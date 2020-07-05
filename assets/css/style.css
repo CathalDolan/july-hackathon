@@ -97,3 +97,14 @@ body {
     background-color:rgb(52, 52, 52);
     margin-bottom: 35px;
 }
+
+
+@media(max-width: 650px) {
+    .form-wrapper {
+        width: 100%;
+    }
+
+    .location-wrapper {
+        width: 100%;
+    }
+}
