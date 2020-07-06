@@ -126,6 +126,7 @@ p{
     background-color: rgb(52, 52, 52);
     text-align: center;
     padding-bottom: 10px;
+    border-radius: 5px;
 }
 
 .form-header {
