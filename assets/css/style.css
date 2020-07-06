@@ -110,3 +110,10 @@ p{
     float: right;
     margin-left: 0.5rem;
 }
+
+
+/* === Header Styles === */
+
+header{
+    background-color: #525252;
+}
