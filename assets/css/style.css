@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ultra&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ultra&display=swap');
 
 * {-webkit-font-smoothing: antialiased;}
 
@@ -121,7 +121,19 @@ p{
 
 /* Contact */
 
+
+.contact-container {
+    padding-top: 45px;
+}
+
+
 /* Form */
+
+.form-wrapper {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
 
 .contact-form {
     background-color: rgb(52, 52, 52);
@@ -132,7 +144,6 @@ p{
 
 .form-header {
     font-family: 'Ultra', serif;
-    font-weight: 400;
     color:  rgb(242, 177, 10);
     padding: 10px 10px;
 }
