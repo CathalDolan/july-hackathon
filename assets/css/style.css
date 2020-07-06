@@ -8,7 +8,8 @@
 }
 
 body {
-    font-family: 'Ultra', serif;
+    font-family: 'Roboto', sans-serif;
+    
 }
 /* Basic Page Set-up */
 
@@ -130,6 +131,8 @@ p{
 }
 
 .form-header {
+    font-family: 'Ultra', serif;
+    font-weight: 400;
     color:  rgb(242, 177, 10);
     padding: 10px 10px;
 }
