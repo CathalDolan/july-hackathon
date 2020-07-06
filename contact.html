@@ -16,20 +16,20 @@
         <div class="form-wrapper">    
             <div class="contact-form">
                 <h3 class="form-header">Send us a message</h3>
-                <form class="form" action="" method="post">
-                    <div class="form-element">
-                        <input type="name" class="form-input"  name="name" placeholder="Name*" aria-label="your name" required >
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="name" placeholder="Name*" aria-label="name" required>
                     </div>
-                    <div class="form-element">
-                        <input type="email" class="form-input"  name="email" placeholder="Email" aria-label="email address" required>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="email" placeholder="Email" aria-label="email" required>
                     </div>
-                    <div class="form-element">
-                        <input type="phone" class="form-input"  name="contact-number" placeholder="Contact number" aria-label="contact number">
+                    <div class="form-group">
+                        <input type="phone" class="form-control" name="phone" placeholder="Contact number" aria-label="contact number" required>
                     </div>
-                    <div class="form-element" id="message-div">
-                        <textarea class="form-input" id="message" name="message" placeholder="Your Message" aria-label="your message" required></textarea>
+                    <div class="form-group">
+                        <textarea class="form-control" name="message" placeholder="Your message" aria-label="message" rows="3"></textarea>
                     </div>
-                    <input type="submit" class="form-button" value="Submit" aria-lebel="submit">
+                    <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
