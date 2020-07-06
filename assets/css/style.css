@@ -9,8 +9,12 @@
 
 html {
     min-width: 300px;
+    max-width: 100%;
 }
-
+.container{
+    margin-right: 5px;
+    margin-left: 5px;
+}
 
 /* Basic Page Set-up */
 
@@ -159,14 +163,24 @@ h2 {
 .home-p{
     font-family: 'Ultra', serif;
     color: #525252;
+    padding: 25px;
 }
-
 hr{
     background-color: rgb(242, 177, 10);
     width: 50%;
     margin-right: auto;
     margin-left: auto;
 }
+.roastery-text{
+    text-align: right;
+}
 #quick-order{
-    display: inline-block;
+    margin-bottom: 15px;
+    background-color: #525252;
+    border: solid 5px var(--yellow);
+    border-top: none;
+}
+.container{
+    margin-right: 5px;
+    margin-left: 5px;
 }
