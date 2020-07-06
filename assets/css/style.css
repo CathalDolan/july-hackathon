@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
+
 * {-webkit-font-smoothing: antialiased;}
 
 * {
     margin: 0;
     padding: 0;
 }
+
+html {
+    min-width: 300px;
+}
+
 
 /* Basic Page Set-up */
 
@@ -116,4 +123,44 @@ p{
 
 header{
     background-color: #525252;
+    border-bottom: 5px solid var(--yellow);
+    min-width: 300px;
+    min-height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+header p {
+    color: white;
+}
+
+h1 {
+    color: var(--yellow);
+    font-family: 'Ultra', serif;
+}
+
+h2 {
+    color: white;
+    background-color: var(--yellow)
+}
+.navbar-collapse {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-collapse ul, .navbar-collapse p {
+    margin:0;
+}
+
+
+.nav-right {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
 }
