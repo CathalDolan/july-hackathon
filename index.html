@@ -1,15 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <script src="assets/js/app.js" defer></script>
-  </head>
-  <body>
-    <h1>Choose Your Hero</h1>
-    <button id="show-characters">Show Available Characters</button>
-    <ul id="character-list"></ul>
-  </body>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Yellow Bourbon</title>
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+	<script src="assets/js/app.js" defer></script>
+</head>
+
+<body>
+	<header>
+		<nav class="navbar navbar-expand-md navbar-dark">
+			<a class="navbar-brand m-0 p-0" href="index.html">
+				<h1>Yellow Bourbon</h1>
+				<h2>Micro Roastery Coffee</h2>
+			</a>
+
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link p-0" href="index.html" aria-label="current page"><i
+                                class="fas fa-home fa-fw"></i>Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link p-0" href="instruments.html" aria-label="navigate to Menu page"><i
+                                class="fas fa-coffee fa-fw"></i>Menu</a>
+					</li>
+                    
+					<li class="nav-item">
+						<a class="nav-link p-0" href="dances.html" aria-label="navigate to Contact page"><i
+                                class="fas fa-phone-alt fa-fw"></i>Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<section>
+		<div id="quick-order" class="container">
+			<div class="row">
+				<div class="col"><h2>Quick order</h2>
+                <select name="quick-order-select" id="quick-order-select">
+                <option value="flat-white">Flat White</option>
+                <option value="americano">Americano</option>
+                <option value="black-tea">Black Tea</option>
+                <option value="espresso">Espresso</option>
+                </select>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-8">
+					<h2>We Love Fresh Coffee</h2>
+					<p class="home-p">We are an independent artisan coffee roaster and cafe located in the heart of Cork.
+						We love fresh coffee which we offer wholesale or by the bag.
+						Why not come in and try our signature coffee and enjoy a slice of something sweet from our tasty
+						cake selection.</p>
+				</div>
+				<div class="col-12 col-md-4">
+					Photo 1
+				</div>
+
+			</div>
+		</div>
+		<hr>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-4">
+					Photo 2
+				</div>
+				<div class="col-12 col-md-8">
+					<h2>Roastery</h2>
+					<p class="home-p">We roast in small quantities allowing us to offer truly fresh coffee to you. Using gentle
+						roasting techniques, taking more time and care, ensuring flavours and aromas remain intact.
+						We are transparent in our sourcing, allowing us to gain the providence from the farm to our
+						green bean merchant to us. Farmers are rewarded with good prices for quality coffee, making the
+						supply chain a truly sustainable model.</p>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-8">
+					<h2>Location</h2>
+					<p class="home-p">A friendly and relaxed atmosphere with plenty of seating inside and a courtyard outside to enjoy
+						a brew in the sunshine.
+						It is the ideal place to come and check out our full range of retail coffee beans – available to
+						take home.
+						Opening times: Weekdays: 7.30am – 6pm | Saturday: 8am – 6pm | Sunday: 9am – 5pm
+						2 min walk from The English Market
+						Address: 2 French Church St, Centre, Cork, T12 E94K, Ireland</p>
+				</div>
+				<div class="col-12 col-md-4">
+					Photo 3
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<footer>
+	</footer>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
 </html>
