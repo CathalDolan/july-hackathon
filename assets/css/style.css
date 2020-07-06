@@ -165,6 +165,18 @@ p{
     text-align: center;
 }
 
+.item-top {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+#tel {
+padding-bottom: 0;
+}
+
+#email {
+    padding-top: 0;
+}
 
 /* Map location */
 
