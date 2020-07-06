@@ -132,8 +132,16 @@ p{
 .form-wrapper {
     padding-top: 30px;
     padding-bottom: 50px;
+    border-bottom: 5px solid rgb(242, 177, 10);
 }
 
+@media(min-width:624px) {
+    .form-wrapper {
+        border-bottom: 0;
+        border-right : 5px solid rgb(242, 177, 10);
+        padding-right: 40px;
+    }
+}
 
 .contact-form {
     background-color: rgb(52, 52, 52);
