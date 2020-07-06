@@ -2,8 +2,11 @@
     background-color: var(--grey);
     border-radius: 15px 15px 0 0;
     margin: 0 auto;
-    overflow: hidden;
-    
+    overflow: hidden; 
+}
+
+#collapse1, #collapse2 {
+    margin: 1rem auto;
 }
 
 .header_container {
@@ -11,14 +14,24 @@
     border-radius: 15px 15px 0 0;
     background-repeat: no-repeat;
     background-size: 175%;
+    padding: 0;
 }
 
-#header_container_coffee {
+.pointer {
+    cursor: pointer;
+}
+
+#header_container_drinks {
     background-image: url(../images/menu_heading_coffee.jpg);
 }
 
 #header_container_snacks {
     background-image: url(../images/menu_heading_snacks.jpg);
+}
+
+hr {
+    margin: 0.5rem auto;
+    width: 75%; 
 }
 
 .row_container {
@@ -39,22 +52,44 @@
     }
 }
 
-h1.yellow_text, .heading_row_container {
-    margin-bottom: 0;
+.heading_row_container {
+    margin: 0 auto;
 }
 
 h1.yellow_text {
     font-size: 40px;
     line-height: 50px;
+    margin: 0;
+}
+@media (max-width: 576px) {
+    h1.yellow_text{
+        font-size: 30px;
+    }
 }
 
 h1.yellow_text, h2.yellow_text, h3.yellow_text {
     color: var(--yellow);
 }
 
+h2.yellow_text, h3.yellow_text {
+    margin: 0.5rem 0 0 0;
+}
+
 p.white_text {
     color: var(--white);
+}
 
+.collapse_arrow {
+    line-height: 50px;
+    color: var(--yellow);
+}
+
+/* Over-riding bootstrap styling on collapse/expand */
+.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
+    border: 0;
+}
+div.panel-body.row_container{
+    padding: 0;
 }
 
 
@@ -77,8 +112,10 @@ p.white_text {
 }
 
 #cup_icon_div_6oz {
-    right: 5px; /* Aligns the cup icon and text with the relative pricing column. Done by eye so not ideal */
-   
+    right: 8px; /* Aligns the cup icon and text with the relative pricing column. Done by eye so not ideal */
+}
+#cup_icon_div_8oz {
+    right: 2px; /* Aligns the cup icon and text with the relative pricing column. Done by eye so not ideal */
 }
 
 p.cup_size_text { /* Used with cup_icon_div_#oz to position text at bottom of the div */
