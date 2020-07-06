@@ -32,6 +32,8 @@ body {
     width: auto;
     background-color: rgb(52, 52, 52);
     border-radius: 3px;
+    padding-left: 6px;
+    padding-right: 6px;
 }
 
 .form {
