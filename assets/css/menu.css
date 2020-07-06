@@ -1,21 +1,32 @@
 .section_container {
     background-color: var(--grey);
-    border: 1px solid red;
+    border-radius: 15px 15px 0 0;
     margin: 0 auto;
     overflow: hidden;
+    
 }
 
 .header_container {
-    border: 1px solid yellow;
-    margin: 0 auto;
-    overflow: hidden;
+    margin: 0 auto 0.5rem auto;
+    border-radius: 15px 15px 0 0;
+    background-repeat: no-repeat;
+    background-size: 175%;
+}
+
+#header_container_coffee {
+    background-image: url(../images/menu_heading_coffee.jpg);
+}
+
+#header_container_snacks {
+    background-image: url(../images/menu_heading_snacks.jpg);
 }
 
 .row_container {
+    min-height: 50px;
     width: 50%;
-    border: 1px solid green;
     margin: 0 auto 0.5rem auto; /*The bottom margin puts space between the product rows */
     overflow: hidden;
+    position: relative;
 }
 @media (max-width: 768px) {
     .row_container{
@@ -28,11 +39,16 @@
     }
 }
 
-.section_row {
-    /* border: 1px solid yellow; */
+h1.yellow_text, .heading_row_container {
+    margin-bottom: 0;
 }
 
-h3.yellow_text, h2.yellow_text {
+h1.yellow_text {
+    font-size: 40px;
+    line-height: 50px;
+}
+
+h1.yellow_text, h2.yellow_text, h3.yellow_text {
     color: var(--yellow);
 }
 
@@ -93,6 +109,34 @@ input {
 }
 
 
+
 .product_name, .product_description {
     margin: 0;
+}
+
+.product_description {
+    width: 80%;
+    line-height: 1.25;
+}
+@media (max-width: 768px) {
+    .product_description {
+        width: 75%;
+    }
+}
+@media (max-width: 576px) {
+    .product_description {
+        width: 70%;
+    }
+}
+
+.price_div_left {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.price_div_right {
+    position: absolute;
+    top: 0;
+    right: 35px;
 }
