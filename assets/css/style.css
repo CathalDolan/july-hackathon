@@ -36,7 +36,9 @@
     --white: rgb(250, 250, 250);
 }
 
-
+.background-color--grey{
+    background-color: var(--grey);
+}
 /* Text & Fonts */
 
 h1, h2, h3, h4, h5, h6 {
@@ -110,3 +112,19 @@ p{
     float: right;
     margin-left: 0.5rem;
 }
+
+
+/*------------Foooter Styling------------*/
+
+footer p{
+    color:var(--yellow);
+}
+
+.footer-item{
+    text-align: center;
+}
+
+.footer-container{
+    border-top: 5px solid var(--yellow);
+}
+
