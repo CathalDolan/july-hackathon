@@ -134,10 +134,19 @@ p{
     padding: 10px 10px;
 }
 
-#textarea {
+.form-group {
     width: 89%;
+    margin: 0 auto;
+}
+
+#textarea {
+    width: 100%;
     resize: none;
-    margin-left: 22px;
+    margin: 0 auto;
+}
+
+.form-control {
+    margin-bottom: 5px;
 }
 
 .form-button {
@@ -147,8 +156,22 @@ p{
     padding: 2px 5px;
 }
 
+
+/* location address */
+
+
+.list-group-item {
+    border: 0;
+    text-align: center;
+}
+
+
+/* Map location */
+
 .location-map {
     width: 250px;
     height: 250px;
     background-color: rgb(52, 52, 52);
+    margin: 0 auto;
 }
+
