@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/styles.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/menu.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <title>Yellow Bourbon</title>
     
     <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png">
@@ -17,218 +18,138 @@
         <section>
 
             <!--======================================== Menu Section - Hot Drinks -->
-            <section class="menu_container">
-                <div class="heading_container">
-                    <div class="section_container section_heading"> <!-- Image to be inserted -->
+            <section class="section_container">
+                <div class="header_container">
+                    <div class="row_container"> <!-- Image to be inserted -->
                         <div class="floatL">
-                            <h3>Hot Drinks</h3>
+                            <h1 class="yellow_text">Hot Drinks</h1>
                         </div>
                         <div class="collapsible collapse_arrow floatR">
                         </div>
+                    </div>
                 </div>
 
                 <div class="collapse_content clear"> <!-- Container to hold the expanded/collapsed content -->
 
                     <!-- Hot drinks sub-header with Fairtrade logo and drink size choices -->
-                    <div class="section_row section_heading">
-                        <h3 class="floatL">Fairtrade</h3>
-                        <h3 class="floatL">Rainforest</h3>
-                        <div class="floatR">
-                            <h3>Cup</h3>
-                            <p>6oz</p>
+                    <div class="row_container">
+                        <img src="assets/images/fairtrade.png" alt="Fairtrade Logo" class="floatL" id="fairtrade_logo">
+                        <img src="assets/images/rainforest_alliance.png" alt="Rainforest Alliance Logo" class="floatL" id="rainforest_logo">
+                        <div id="cup_icon_div_8oz" class="floatR div-center">
+                            <img src="assets/images/cup_icon.png" alt="Coffee Cup Icon" style="height: 30px;" id="cup_icon_image_8oz">
+                            <p class="white_text cup_size_text">8oz</p>
                         </div>
-                        <div class="floatR">
-                            <h3>Cup</h3>
-                            <p>8oz</p>
+                        <div id="cup_icon_div_6oz" class="floatR div-center">
+                            <img src="assets/images/cup_icon.png" alt="Coffee Cup Icon" style="height: 25px;" id="cup_icon_image_6oz">
+                            <p class="white_text cup_size_text">6oz</p>
                         </div>
                     </div>
 
                     <!-- Individual drinks listing -->
-                    <div class="section_row section_heading">
-                        <h3 class="floatL">Americano</h3>
-                        <p class="floatL">Americano description</p>
-                        <div class="floatR">
-                            <h3>Price</h3>
+                    <div class="row_container">
+                        <h2 class="floatL yellow_text product_name">Americano
+                            <p class="clearB white_text product_description">Americano description</p>
+                        </h2>
+                        <div class="floatR div-center">
+                            <h3 class="yellow_text price">€2.50</h3>
                             <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
                         </div>
-                        <div class="floatR">
-                            <h3>Price</h3>
-                            <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
-                        </div>
-                    </div>
-                    <div class="section_row section_heading">
-                        <h3 class="floatL">Drink 2</h3>
-                        <p class="floatL">Drink 2 description</p>
-                        <div class="floatR">
-                            <h3>Price</h3>
-                            <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
-                        </div>
-                        <div class="floatR">
-                            <h3>Price</h3>
+                        <div class="floatR div-center">
+                            <h3 class="yellow_text price">€2.95</h3>
                             <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
                         </div>
                     </div>
-                    <div class="section_row section_heading">
-                        <h3 class="floatL">Drink 3</h3>
-                        <p class="floatL">Drink 3 description</p>
-                        <div class="floatR">
-                            <h3>Price</h3>
+                    <div class="row_container">
+                        <h2 class="floatL yellow_text product_name">Americano
+                            <p class="clearB white_text product_description">Americano description</p>
+                        </h2>
+                        <div class="floatR div-center">
+                            <h3 class="yellow_text price">€2.50</h3>
                             <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
                         </div>
-                        <div class="floatR">
-                            <h3>Price</h3>
-                            <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
-                        </div>
-                    </div>
-                    <div class="section_row section_heading">
-                        <h3 class="floatL">Drink 4</h3>
-                        <p class="floatL">Drink 4 description</p>
-                        <div class="floatR">
-                            <h3>Price</h3>
-                            <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
-                        </div>
-                        <div class="floatR">
-                            <h3>Price</h3>
+                        <div class="floatR div-center">
+                            <h3 class="yellow_text price">€2.95</h3>
                             <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
                         </div>
                     </div>
-                    <div class="section_row section_heading">
-                        <h3 class="floatL">Drink 5</h3>
-                        <p class="floatL">Drink 5 description</p>
-                        <div class="floatR">
-                            <h3>Price</h3>
+                    <div class="row_container">
+                        <h2 class="floatL yellow_text product_name">Americano
+                            <p class="clearB white_text product_description">Americano description</p>
+                        </h2>
+                        <div class="floatR div-center">
+                            <h3 class="yellow_text price">€2.50</h3>
                             <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
                         </div>
-                        <div class="floatR">
-                            <h3>Price</h3>
-                            <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
-                        </div>
-                    </div>
-                    <div class="section_row section_heading">
-                        <h3 class="floatL">Drink 6</h3>
-                        <p class="floatL">Drink 6 description</p>
-                        <div class="floatR">
-                            <h3>Price</h3>
-                            <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
-                        </div>
-                        <div class="floatR">
-                            <h3>Price</h3>
+                        <div class="floatR div-center">
+                            <h3 class="yellow_text price">€2.95</h3>
                             <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
                         </div>
                     </div>
-                    <div class="section_row section_heading">
-                        <h3 class="floatL">Drink 7</h3>
-                        <p class="floatL">Drink 7 description</p>
-                        <div class="floatR">
-                            <h3>Price</h3>
+                    <div class="row_container">
+                        <h2 class="floatL yellow_text product_name">Americano
+                            <p class="clearB white_text product_description">Americano description</p>
+                        </h2>
+                        <div class="floatR div-center">
+                            <h3 class="yellow_text price">€2.50</h3>
                             <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
                         </div>
-                        <div class="floatR">
-                            <h3>Price</h3>
-                            <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
-                        </div>
-                    </div>
-                    <div class="section_row section_heading">
-                        <h3 class="floatL">Drink 8</h3>
-                        <p class="floatL">Drink 8 description</p>
-                        <div class="floatR">
-                            <h3>Price</h3>
-                            <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
-                        </div>
-                        <div class="floatR">
-                            <h3>Price</h3>
+                        <div class="floatR div-center">
+                            <h3 class="yellow_text price">€2.95</h3>
                             <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
                         </div>
                     </div>
-                </div>
-
-            </section>
-
-            <!--======================================== Menu Section - Hot Drinks -->
-            <section class="menu_container">
-                <div class="heading_container">
-                    <div class="section_container section_heading"> <!-- Image to be inserted -->
-                        <div class="floatL">
-                            <h3>Hot Drinks</h3>
-                        </div>
-                        <div class="collapsible collapse_arrow floatR">
-                        </div>
-                </div>
-
-                <div class="collapse_content clear"> <!-- Container to hold the expanded/collapsed content -->
-
-                    <!-- Hot drinks sub-header with Fairtrade logo and drink size choices -->
-                    <div class="section_row section_heading">
-                        <h3 class="floatL">Fairtrade</h3>
-                        <h3 class="floatL">Rainforest</h3>
-                        <div class="floatR">
-                            <h3>Cup</h3>
-                            <p>6oz</p>
-                        </div>
-                        <div class="floatR">
-                            <h3>Cup</h3>
-                            <p>8oz</p>
-                        </div>
-                    </div>
-
-                    <!-- Snacks listing -->
-                    <div class="section_row section_heading">
-                        <h3 class="floatL">Fran's Mum's Fruit Scone</h3>
-                        <p class="floatL">Our chef Fran has stolen his mum's amazing scone recipe. Shhh, don't tell her!</p>
-                        <div class="floatR">
-                            <h3>€1.95</h3>
+                    <div class="row_container">
+                        <h2 class="floatL yellow_text product_name">Americano
+                            <p class="clearB white_text product_description">Americano description</p>
+                        </h2>
+                        <div class="floatR div-center">
+                            <h3 class="yellow_text price">€2.50</h3>
                             <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
                         </div>
-                        <div class="floatR">
-                            <h3>Price</h3>
+                        <div class="floatR div-center">
+                            <h3 class="yellow_text price">€2.95</h3>
                             <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
                         </div>
                     </div>
-                    <div class="section_row section_heading">
-                        <h3 class="floatL">Carrot Cake</h3>
-                        <p class="floatL">A nice thick slice of moist, not too sweet, carrot cake, with extra topping.</p>
-                        <div class="floatR">
-                            <h3>Price</h3>
+                    <div class="row_container">
+                        <h2 class="floatL yellow_text product_name">Americano
+                            <p class="clearB white_text product_description">Americano description</p>
+                        </h2>
+                        <div class="floatR div-center">
+                            <h3 class="yellow_text price">€2.50</h3>
                             <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
                         </div>
-                        <div class="floatR">
-                            <h3>Price</h3>
-                            <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
-                        </div>
-                    </div>
-                    <div class="section_row section_heading">
-                        <h3 class="floatL">Our Danish</h3>
-                        <p class="floatL">Our homemade sweetness in a fruit filled, sugar topped swirl</p>
-                        <div class="floatR">
-                            <h3>Price</h3>
+                        <div class="floatR div-center">
+                            <h3 class="yellow_text price">€2.95</h3>
                             <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
                         </div>
                     </div>
-                    <div class="section_row section_heading">
-                        <h3 class="floatL">Sausage Rolls:</h3>
-                        <p class="floatL">Our secret recipe mega-butter pastry stuffed with Superquinn sausage meat. 3 per portion.</p>
-                        <div class="floatR">
-                            <h3>Price</h3>
+                    <div class="row_container">
+                        <h2 class="floatL yellow_text product_name">Americano
+                            <p class="clearB white_text product_description">Americano description</p>
+                        </h2>
+                        <div class="floatR div-center">
+                            <h3 class="yellow_text price">€2.50</h3>
+                            <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
+                        </div>
+                        <div class="floatR div-center">
+                            <h3 class="yellow_text price">€2.95</h3>
                             <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
                         </div>
                     </div>
-                    <div class="section_row section_heading">
-                        <h3 class="floatL">Homemade Protein Bar</h3>
-                        <p class="floatL">Protein bar packed with nuts and seeds and sweetened with locally sourced honey.</p>
-                        <div class="floatR">
-                            <h3>Price</h3>
+                    <div class="row_container">
+                        <h2 class="floatL yellow_text product_name">Americano
+                            <p class="clearB white_text product_description">Americano description</p>
+                        </h2>
+                        <div class="floatR div-center">
+                            <h3 class="yellow_text price">€2.50</h3>
+                            <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
+                        </div>
+                        <div class="floatR div-center">
+                            <h3 class="yellow_text price">€2.95</h3>
                             <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
                         </div>
                     </div>
-                    <div class="section_row section_heading">
-                        <h3 class="floatL">Ham & Cheese Toasty</h3>
-                        <p class="floatL">Thick slices of Brady's ham and Dubliner Cheddar between two thick slices of Brennan's bread.</p>
-                        <div class="floatR">
-                            <h3>Price</h3>
-                            <input type="text" inputmode="numeric" pattern="[0-9]*" placeholder="0" maxlength="2" class=""/>
-                        </div>
-                    </div>
-                </div>
 
             </section>
             

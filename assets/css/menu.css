@@ -1,0 +1,98 @@
+.section_container {
+    background-color: var(--grey);
+    border: 1px solid red;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.header_container {
+    border: 1px solid yellow;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.row_container {
+    width: 50%;
+    border: 1px solid green;
+    margin: 0 auto 0.5rem auto; /*The bottom margin puts space between the product rows */
+    overflow: hidden;
+}
+@media (max-width: 768px) {
+    .row_container{
+        width: 70%;
+    }
+}
+@media (max-width: 576px) {
+    .row_container{
+        width: 95%;
+    }
+}
+
+.section_row {
+    /* border: 1px solid yellow; */
+}
+
+h3.yellow_text, h2.yellow_text {
+    color: var(--yellow);
+}
+
+p.white_text {
+    color: var(--white);
+
+}
+
+
+#fairtrade_logo, #rainforest_logo {
+    height: 60px;
+}
+@media (max-width: 576px) {
+    #fairtrade_logo, #rainforest_logo{
+        height: 40px;
+        margin-top: 10px;
+    }
+}
+
+/* Positioning of the cup sizes and icons */
+#cup_icon_div_6oz, #cup_icon_div_8oz {
+    height: 60px;
+    width: 23px;
+    overflow: hidden;
+    position: relative; /* Used with cup_size_text to position text at bottom of the div */
+}
+
+#cup_icon_div_6oz {
+    right: 5px; /* Aligns the cup icon and text with the relative pricing column. Done by eye so not ideal */
+   
+}
+
+p.cup_size_text { /* Used with cup_icon_div_#oz to position text at bottom of the div */
+    margin: 0;
+    position: absolute; 
+    bottom: 0;
+}
+
+#cup_icon_image_6oz {
+   margin-top: 5px; /* Used to align cup icons along bottom. DOne by eye so not ideal */
+}
+
+
+.div-center { /* Aligns input beneath their respective prices */
+    text-align: center;
+}
+
+
+
+h3.price {
+    font-size: 12px;
+    margin-bottom: 2px;
+}
+
+input {
+    width: 2ch;
+    margin: 0 auto;
+}
+
+
+.product_name, .product_description {
+    margin: 0;
+}
