@@ -1,6 +1,8 @@
 /* ====== Contact Page======== */
 
-
+.main-contact {
+    margin: 0 auto;
+}
 .contact-container {
     padding-top: 45px;
 }
@@ -10,7 +12,8 @@
 
 .form-wrapper {
     padding-top: 30px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    margin-bottom: 20px;
     border-bottom: 5px solid rgb(242, 177, 10);
 }
 
