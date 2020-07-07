@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Nova+Mono&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap");
 
 * {-webkit-font-smoothing: antialiased;}
 
@@ -15,27 +16,16 @@ html {
 
 /* Basic Page Set-up */
 
-.main {
+main {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
 }
 @media (max-width: 576px) {
-    .main{
-        width: 80%;
+    main{
+        width: 95%;
     }
 }
-
-.section_container { /* Container used for sections within the .main that require additional spacing */
-    width: 90%;
-    margin: 0 auto;
-}
-@media (max-width: 576px) {
-    .section_container {
-    width: 95%;
-    }
-}
-
 
 /* Colours - To use a colour: var(--colour_name). e.g var(--yellow) */
 :root {
@@ -48,11 +38,11 @@ html {
 /* Text & Fonts */
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: tbc;
+    font-family: 'Nova Mono', monospace;;
 }
 
 p {
-    font-family: tbc;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .heading_font {
@@ -237,4 +227,15 @@ header h2 {
         grid-template-columns: 1fr 1fr;
     }
     
+}
+.clearB {
+    clear: both;
+}
+
+.clearL {
+    clear:left;
+}
+
+.clearR {
+    clear: right;
 }
