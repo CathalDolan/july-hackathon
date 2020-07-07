@@ -159,11 +159,15 @@ h2 {
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
-
+.home-h2{
+    text-align: center;
+}
 .home-p{
     font-family: 'Ultra', serif;
     color: #525252;
     padding: 25px;
+    text-align: center;
+    font-size: 100%;s
 }
 hr{
     background-color: rgb(242, 177, 10);
@@ -183,4 +187,7 @@ hr{
 .container{
     margin-right: 5px;
     margin-left: 5px;
+}
+img{
+    width: 100%;
 }
