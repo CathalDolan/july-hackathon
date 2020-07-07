@@ -1,3 +1,5 @@
+<link href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+
 * {-webkit-font-smoothing: antialiased;}
 
 * {
@@ -7,27 +9,16 @@
 
 /* Basic Page Set-up */
 
-.main {
+main {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
 }
 @media (max-width: 576px) {
-    .main{
-        width: 80%;
+    main{
+        width: 95%;
     }
 }
-
-.section_container { /* Container used for sections within the .main that require additional spacing */
-    width: 90%;
-    margin: 0 auto;
-}
-@media (max-width: 576px) {
-    .section_container {
-    width: 95%;
-    }
-}
-
 
 /* Colours - To use a colour: var(--colour_name). e.g var(--yellow) */
 :root {
@@ -40,11 +31,11 @@
 /* Text & Fonts */
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: tbc;
+    font-family: 'Nova Mono', monospace;;
 }
 
 p {
-    font-family: tbc;
+    font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .heading_font {
@@ -109,4 +100,16 @@ p{
 .floatR {
     float: right;
     margin-left: 0.5rem;
+}
+
+.clearB {
+    clear: both;
+}
+
+.clearL {
+    clear:left;
+}
+
+.clearR {
+    clear: right;
 }
