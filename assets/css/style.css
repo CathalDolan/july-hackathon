@@ -160,9 +160,24 @@ margin: auto;
   /* == NAV SECTION == */ 
 
 .full-nav{
+    position: fixed;
+    left: 0;
+    top: 98px;
+    text-align: center;
+    z-index: 100;
     display: none;
 }
+.full-nav ul{
+list-style: none;
+}
 
+.full-nav ul li{
+    color: white;
+    background-color: var(--grey);
+    padding: 20px;
+    border-bottom: 1px solid var(--yellow);
+
+}
 #nav-burger{
     color: var(--yellow);
     font-size: 16px;
@@ -202,7 +217,11 @@ margin: auto;
         color: var(--yellow)
     }
 
+
+
+    
     .full-nav{
+        position: static;
         margin: 0;
         display:flex;
         flex-direction: column;
@@ -210,8 +229,9 @@ margin: auto;
         margin-top: 20px;
     }
 
-    nav ul li {
+    .full-nav ul li {
         display: inline-block;
+        border-bottom: none;
     }
 
     nav p {
