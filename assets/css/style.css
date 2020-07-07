@@ -47,7 +47,7 @@ main {
     --white: rgb(250, 250, 250);
 }
 
-.background-color-grey{
+.background-color--grey{
     background-color: var(--grey);
 }
 /* Text & Fonts */
@@ -119,13 +119,12 @@ p{
 /* == HEADER == */ 
 
 header{
-    height: 160px;
     background-color:var(--grey);
     border-bottom: 5px solid var(--yellow);
-    display: grid;
-    grid-template-columns: 2fr 1fr;
+
 
 }
+
 nav{
     vertical-align: middle;
     display: flex;
@@ -136,9 +135,6 @@ nav{
 
 /* == LOGO SECTION == */ 
 .logo{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     text-align: center;
     margin:auto
 }
@@ -152,7 +148,8 @@ header h2 {
     background-color: var(--yellow);
     font-family: 'Yanone Kaffeesatz', sans-serif;
     font-weight: 300;
-    margin: 0;
+    max-width: 200px;
+margin: auto;
 }
 
   /* == NAV SECTION == */ 
@@ -177,8 +174,7 @@ header h2 {
     /* == NAV SECTION == */
 
     header{
-        display: grid;
-        grid-template-columns: 1fr 2fr;
+
     }
 
     #nav-burger{
@@ -227,7 +223,6 @@ header h2 {
 @media (min-width: 1024px) {
 
     header{
-        grid-template-columns: 1fr 1fr;
     }
     
 }
@@ -237,11 +232,7 @@ header h2 {
 header{
     background-color: #525252;
     border-bottom: 5px solid var(--yellow);
-    min-width: 300px;
-    min-height: 120px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
 
 }
 
@@ -266,6 +257,9 @@ header p {
     display: grid;
     grid-template-rows: 1fr 1fr;
 }
+
+/* === END OF HEADER STYLES === */ 
+
 .home-h2{
     text-align: center;
 }
