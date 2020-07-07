@@ -58,7 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.50px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -287,10 +287,7 @@ hr{
     border: solid 5px var(--yellow);
     border-top: none;
 }
-.container{
-    margin-right: 5px;
-    margin-left: 5px;
-}
+
 img{
     width: 100%;
 }
