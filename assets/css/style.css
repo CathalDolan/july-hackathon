@@ -1,10 +1,9 @@
-<link href="https://fonts.googleapis.com/css2?family=Nova+Mono&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
-
-* {-webkit-font-smoothing: antialiased;}
+@import url("https://fonts.googleapis.com/css2?family=Nova+Mono&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap");
 
 * {
     margin: 0;
     padding: 0;
+    -webkit-font-smoothing: antialiased;
 }
 
 /* Basic Page Set-up */
