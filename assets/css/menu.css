@@ -5,10 +5,6 @@
     overflow: hidden; 
 }
 
-#collapse1, #collapse2 {
-    margin: 1rem auto;
-}
-
 .header_container {
     margin: 0 auto 0.5rem auto;
     
@@ -57,7 +53,7 @@ hr {
 }
 
 h1.yellow_text {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 50px;
     margin: 0;
 }
@@ -79,11 +75,6 @@ p.white_text {
     color: var(--white);
 }
 
-.collapse_arrow {
-    line-height: 50px;
-    color: var(--yellow);
-}
-
 /* Over-riding bootstrap styling on collapse/expand */
 .panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
     border: 0;
@@ -94,18 +85,17 @@ div.panel-body.row_container{
 
 
 #fairtrade_logo, #rainforest_logo {
-    height: 60px;
+    width: 40px; /* Used to centre the logo in the div. Done by eye...*/
 }
-@media (max-width: 576px) {
-    #fairtrade_logo, #rainforest_logo{
-        height: 40px;
-        margin-top: 10px;
-    }
+
+#rainforest_logo {
+    margin-top: 5px;
+    width: 40px;
 }
 
 /* Positioning of the cup sizes and icons */
 #cup_icon_div_6oz, #cup_icon_div_8oz {
-    height: 60px;
+    height: 50px;
     width: 23px;
     overflow: hidden;
     position: relative; /* Used with cup_size_text to position text at bottom of the div */
@@ -118,14 +108,19 @@ div.panel-body.row_container{
     right: 2px; /* Aligns the cup icon and text with the relative pricing column. Done by eye so not ideal */
 }
 
-p.cup_size_text { /* Used with cup_icon_div_#oz to position text at bottom of the div */
-    margin: 0;
+h4.cup_size_text { /* Used with cup_icon_div_#oz to position text at bottom of the div */
+    margin: 2px 0 0 2px;
     position: absolute; 
     bottom: 0;
+    font-size: 12px;
+    color: var(--white);
 }
 
 #cup_icon_image_6oz {
-   margin-top: 5px; /* Used to align cup icons along bottom. DOne by eye so not ideal */
+   margin-top: 8px; /* Used to align cup icons along bottom. DOne by eye so not ideal */
+}
+#cup_icon_image_8oz {
+   margin-top: 3px; /* Used to align cup icons along bottom. DOne by eye so not ideal */
 }
 
 
@@ -140,11 +135,6 @@ h3.price {
     margin-bottom: 2px;
 }
 
-input {
-    width: 2ch;
-    margin: 0 auto;
-}
-
 
 
 .product_name, .product_description {
@@ -154,6 +144,7 @@ input {
 .product_description {
     width: 80%;
     line-height: 1.25;
+    margin-top: 5px;
 }
 @media (max-width: 768px) {
     .product_description {
@@ -176,4 +167,9 @@ input {
     position: absolute;
     top: 0;
     right: 35px;
+}
+
+.qty_selector_input {
+    margin: 8px auto 0 auto;
+    width: 2ch;
 }
