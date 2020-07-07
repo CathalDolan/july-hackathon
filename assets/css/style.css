@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ultra&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&family=Yanone+Kaffeesatz:wght@200;300;400;500;600;700&display=swap')
 
-* {-webkit-font-smoothing: antialiased;}
 
-* {
+* {-webkit-font-smoothing: antialiased;
     margin: 0;
     padding: 0;
 }
@@ -19,11 +19,15 @@ html {
 /* Basic Page Set-up */
 
 .main {
+/* Basic Page Set-up */
+
+main {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
 }
 @media (max-width: 576px) {
+<<<<<<< HEAD
     .main{
         width: 80%;
     }
@@ -36,8 +40,8 @@ html {
 @media (max-width: 576px) {
     .section_container {
     width: 95%;
-    }
-}
+=======
+
 
 /* Colours - To use a colour: var(--colour_name). e.g var(--yellow) */
 :root {
@@ -46,6 +50,7 @@ html {
     --white: rgb(250, 250, 250);
 }
 
+<<<<<<< HEAD
 /* Text & Fonts */
 h1, h2, h3, h4, h5, h6 {
     font-family: tbc;
@@ -59,6 +64,29 @@ p {
 h1, h2, h3, h4, h5, h6, p {
     color: var(--grey);
 }
+=======
+.background-color--grey{
+    background-color: var(--grey);
+}
+/* Text & Fonts */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Nova Mono', monospace;;
+}
+
+p {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.heading_font {
+    font-family: tbc;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: var(--grey);
+}
+
+>>>>>>> master
 h1 {
     font-size: 24px;
 }
@@ -74,6 +102,7 @@ h4{
 p{
     font-size: 14px;
 }
+<<<<<<< HEAD
 @media (max-width: 576px) {
     h1 {
     font-size: 20px;
@@ -91,6 +120,11 @@ p{
     p{
         font-size: 14px;
     }
+=======
+
+.uppercase{
+    text-transform: uppercase;
+>>>>>>> master
 }
 
 /* align text classes */
@@ -116,6 +150,7 @@ p{
 }
 
 
+<<<<<<< HEAD
 /* === Header Styles === */
 
 header{
@@ -191,3 +226,90 @@ hr{
 img{
     width: 100%;
 }
+=======
+
+/*------------Foooter Styling------------*/
+
+footer p{
+    color:var(--yellow);
+    margin-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footer-item{
+    text-align: center;
+    font-size: 32px;
+    margin: auto auto;
+}
+
+.footer-item a{
+    text-decoration: none;
+    color: var(--yellow);
+    font-size: 48px;
+    padding-left:20px;
+    padding-right:20px;
+    transition: all .5s ease-in-out;
+    -moz-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out;
+}
+
+.footer-item a:hover,
+.footer-item a:active,
+.footer-item a:focus{
+    color:var(--white);
+}
+
+
+.footer-item span{
+    vertical-align: super;
+    font-size: 50%;
+}
+
+.footer-container{
+    border-top: 5px solid var(--yellow);
+}
+
+/*----------------------Media----------------*/
+@media (max-width: 576px) {
+    h1 {
+    font-size: 20px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    h3 {
+        font-size: 16px;
+    }
+    h4{
+        font-size: 14px;
+        font-weight: bold;
+    }
+    p{
+        font-size: 14px;
+    }
+
+    .footer-item p{
+    font-size: 16px; 
+    }
+
+    .footer-item a{
+    font-size: 32px;
+    padding-left:5px;
+    padding-right: 5px;
+    }
+}
+=======
+.clearB {
+    clear: both;
+}
+
+.clearL {
+    clear:left;
+}
+
+.clearR {
+    clear: right;
+}
+
+>>>>>>> master
