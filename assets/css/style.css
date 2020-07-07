@@ -121,7 +121,7 @@ p{
 header{
     background-color:var(--grey);
     border-bottom: 5px solid var(--yellow);
-
+    padding: 20px 0;
 
 }
 
@@ -130,7 +130,12 @@ nav{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-right: 32px;
+}
+
+.nav-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* == LOGO SECTION == */ 
@@ -164,7 +169,6 @@ margin: auto;
     border: 2px solid var(--yellow);
     padding: 4px 12px;
     border-radius: 5px;
-    margin-left: 40px;
     width: 40px;  
 }
 
