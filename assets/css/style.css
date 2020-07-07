@@ -58,10 +58,7 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
     font-family: 'Yanone Kaffeesatz', sans-serif;
-}
-
-.heading_font {
-    font-family: tbc;
+    letter-spacing: 0.5px;
 }
 
 h1, h2, h3, h4, h5, h6, p {
