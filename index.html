@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
@@ -11,13 +11,78 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/app.js" defer></script>
   </head>
-  <body>
-    <h1>Choose Your Hero</h1>
-    <button id="show-characters">Show Available Characters</button>
-    <ul id="character-list"></ul>
 
-    <!---------------------Start of Footer----------------->
-    <footer>
+
+<body>
+	
+	<section>
+		<div id="quick-order" class="container">
+			<div class="row">
+				<div class="col"><h2>Quick order</h2>
+                <select name="quick-order-select" id="quick-order-select">
+                <option value="flat-white">Flat White</option>
+                <option value="americano">Americano</option>
+                <option value="black-tea">Black Tea</option>
+                <option value="espresso">Espresso</option>
+                </select>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section id="main">
+
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-7">
+					<h2 class="home-h2">We Love Fresh Coffee</h2>
+					<p class="home-p">We are an independent artisan coffee roaster and cafe located in the heart of Cork.
+						We love fresh coffee which we offer wholesale or by the bag.
+						Why not come in and try our signature coffee and enjoy a slice of something sweet from our tasty
+						cake selection.</p>
+				</div>
+				<div class="col-12 col-md-5">
+					<img src="assets/images/cafe_front.jpg" alt="Cafe Front">
+				</div>
+
+			</div>
+		</div>
+		<hr>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-5">
+					<img class="home-images" src="assets/images/roasting.jpg" alt="Roasting coffee beans">
+				</div>
+				<div class="col-12 col-md-7 roastery-text">
+					<h2 class="home-h2">Roastery</h2>
+					<p class="home-p">We roast in small quantities allowing us to offer truly fresh coffee to you. Using gentle
+						roasting techniques, taking more time and care, ensuring flavours and aromas remain intact.
+						We are transparent in our sourcing, allowing us to gain the providence from the farm to our
+						green bean merchant to us. Farmers are rewarded with good prices for quality coffee, making the
+						supply chain a truly sustainable model.</p>
+				</div>
+			</div>
+		</div>
+		<hr>
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-7">
+					<h2 class="home-h2">Location</h2>
+					<p class="home-p">A friendly and relaxed atmosphere with plenty of seating inside and a courtyard outside to enjoy
+						a brew in the sunshine.
+						It is the ideal place to come and check out our full range of retail coffee beans – available to
+						take home. <br>
+						Opening times: Weekdays: 7.30am – 6pm | Saturday: 8am – 6pm | Sunday: 9am – 5pm <br>
+						2 min walk from The English Market
+						Address: 2 French Church St, Centre, Cork, T12 E94K, Ireland</p>
+				</div>
+				<div class="col-12 col-md-5">
+					<img src="assets/images/cafe_interior.jpg" alt="Cafe interior">
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<footer>
         
        <div class="container-fluid background-color--grey footer-container">
             <div class="row">
@@ -36,5 +101,10 @@
             </div>
         </div>
     </footer>
-  </body>
+  
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
 </html>
