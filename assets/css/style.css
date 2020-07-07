@@ -24,6 +24,7 @@ main {
     width: 80%;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
 }
 @media (max-width: 576px) {
     main{
@@ -122,6 +123,10 @@ header{
     background-color:var(--grey);
     border-bottom: 5px solid var(--yellow);
     padding: 20px 0;
+    position: fixed;
+    width: 100vw;
+    min-width: 300px;
+    z-index: 100;
 
 }
 
@@ -172,10 +177,11 @@ list-style: none;
 }
 
 .full-nav ul li{
-    color: white;
+    color: var(--yellow);
     background-color: var(--grey);
     padding: 20px;
     border-bottom: 1px solid var(--yellow);
+    width: 100vw;
 
 }
 #nav-burger{
@@ -187,14 +193,20 @@ list-style: none;
     width: 40px;  
 }
 
+.full-nav p{
+    display: none;
+}
+@media (min-width: 577px){
+    .full-nav{
+        top:105px;
+    }
+}
   /* === TABLET MEDIA QUERY === */
 @media (min-width: 768px) {
 
     /* == NAV SECTION == */
 
-    header{
 
-    }
 
     #nav-burger{
         display:none;
@@ -232,9 +244,11 @@ list-style: none;
     .full-nav ul li {
         display: inline-block;
         border-bottom: none;
+        width: auto;
     }
 
-    nav p {
+    .full-nav p {
+        display: block;
         color: white;
         display: inline-block;
         font-family: 'Yanone Kaffeesatz', sans-serif;
@@ -242,14 +256,7 @@ list-style: none;
     }
 }
 
-/* === WEB MEDIA QUERY === */
 
-@media (min-width: 1024px) {
-
-    header{
-    }
-    
-}
 
 /* === Header Styles === */
 
