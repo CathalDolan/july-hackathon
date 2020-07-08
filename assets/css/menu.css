@@ -1,16 +1,12 @@
-.section_container {
+div.section_container { /* Over rides the styling in styles.css */
     background-color: var(--grey);
-    
-    margin: 0 auto;
+    margin: 0.5rem auto;
     overflow: hidden; 
 }
 
-.header_container {
-    margin: 0 auto 0.5rem auto;
-    
-    background-repeat: no-repeat;
-    background-size: 175%;
+.card-header {
     padding: 0;
+    margin-bottom: 0.5rem;
 }
 
 .pointer {
@@ -19,10 +15,12 @@
 
 #header_container_drinks {
     background-image: url(../images/menu_heading_coffee.jpg);
+    height: 50px;
 }
 
 #header_container_snacks {
     background-image: url(../images/menu_heading_snacks.jpg);
+    height: 50px;
 }
 
 hr {
@@ -31,9 +29,9 @@ hr {
 }
 
 .row_container {
-    min-height: 50px;
+    min-height: 60px;
     width: 50%;
-    margin: 0 auto 0.5rem auto; /*The bottom margin puts space between the product rows */
+
     overflow: hidden;
     position: relative;
 }
@@ -46,6 +44,10 @@ hr {
     .row_container{
         width: 95%;
     }
+}
+
+.row_container, .container.row_container { /* Over rides Bootstrap styling */
+    margin: 0 auto 0.5rem auto; /*The bottom margin puts space between the product rows */
 }
 
 .heading_row_container {
@@ -63,7 +65,7 @@ h1.yellow_text {
     }
 }
 
-h1.yellow_text, h2.yellow_text, h3.yellow_text {
+h2.yellow_text, h3.yellow_text {
     color: var(--yellow);
 }
 
@@ -76,10 +78,7 @@ p.white_text {
 }
 
 /* Over-riding bootstrap styling on collapse/expand */
-.panel-group .panel-heading+.panel-collapse>.list-group, .panel-group .panel-heading+.panel-collapse>.panel-body {
-    border: 0;
-}
-div.panel-body.row_container{
+div.card-body.row_container, #order_section #time_container {
     padding: 0;
 }
 
@@ -172,4 +171,62 @@ h3.price {
 .qty_selector_input {
     margin: 8px auto 0 auto;
     width: 2ch;
+
+}
+
+#order_section .row_container {
+    min-height: 1px;
+}
+
+#order_section h2 {
+    font-size: 22px;
+}
+
+div>h5, #order_section p {
+    color: var(--white);
+    margin-bottom: 0;
+}
+
+#order_section .col{
+    padding: 0;
+}
+
+div>h5 {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+#order_details_row p {
+    font-size: 16px;
+}
+
+.order_col_trash {
+    text-align: right;
+}
+
+#order_details_totals p {
+    font-weight: bold;
+}
+
+.row.justify-content-md-center {
+    background-color: var(--white);
+    width: 100%;
+    margin: 0;
+}
+
+.time_col { /*------- Brick Buttons */
+    background-color: var(--white);
+    border: 0.5px solid var(--yellow);
+    white-space: nowrap;
+    text-align: center;
+}
+
+#order_section .btn {
+    background-color: var(--yellow);
+    width: 100px;
+    margin-top: 0.5rem;
+}
+
+.order_button.row_container {
+    text-align: center;
 }
