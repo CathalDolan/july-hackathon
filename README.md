@@ -17,8 +17,9 @@
 
 ## UX:superhero_man:	
   * **Project Goals** :jigsaw:	
-  * **Project Goals** :jigsaw:	
   * **Target Audience Goals** 	:dart:
+   * User goals
+   * User stories
   * **Site Owner Goals**  	:dart:
   * **User Requirements and Expectations** 	:dart:
   * **Design Choices** :framed_picture:		
@@ -39,10 +40,11 @@
   * **Acknowledgements** :clap:
 
 ## UX 
-### Project goals
+### Project goals :jigsaw:	
 The goal of this project is to create an application that allows customers of the local coffee shop to order coffee and snacks for collection. Users will be available to make a decision to pay for order online or in store. The website has to allow the customers to make a quick purchase of the favourite drinks without having to go through a lot of content first.
 
-### User goals
+### Target Audience Goals
+**User goals**
 
 * Ability to order coffee
 * Ability to order snacks
@@ -51,13 +53,22 @@ The goal of this project is to create an application that allows customers of th
 * Ability to contact the through the contact form
 * Interact with the website on both Desktop tablet or mobile
 
-### User Stories
+**User Stories**
 
 * As a user I should be able to select a coffee drink
 * As a user I should be able to select a snack
 * As a user I should be able to set my collection time
 * As a user I should be able to send my order via sending JSON
 * As a user I expect to see all available coffees and snacks
+
+### Site Owner Goals  	:dart:
+
+* Improve sale of the products in an uncertain economic times
+* Improve brand recognition in the local area
+* Advertise their product and services
+* Receive contact details through use of contact form
+
+
 
 ### Deployment :surfer:
 
