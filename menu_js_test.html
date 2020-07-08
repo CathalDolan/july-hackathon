@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    
+    <title>Document</title>
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+    <div>
+        <ul>
+            <li><a class="add_to_cart" href="" data-name="Apple" data-price=1.00>Apple</a></li>
+            <li><a class="add_to_cart" href="" data-name="Orange" data-price=1.50>Orange</a></li>
+            <li><a class="add_to_cart" href="" data-name="Banana" data-price=1.75>Banana</a></li>
+            <li><a class="add_to_cart" href="" data-name="Pear" data-price=1.95>Pear</a></li>
+        </ul>
+        
+    </div>
+    <div>
+        <ul id="show_cart">
+            Your Cart is Empty
+        </ul>
+        <div>Total Items: <span id="total_items"></span></div>
+        <div>Total Cart: <span id="total_cart"></span></div>
+        <button id="clear_cart">X</button>
+    </div>
+</body>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script> <!-- 1.11.3 -->
+    <script src="assets/js/menu.js"></script>
+
+</html>
