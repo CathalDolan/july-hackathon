@@ -6,27 +6,28 @@
 
 # Contents :book:
 
-* UX
-  * Project Goals
-  * Target Audience Goals
-  * Site Owner Goals
-  * User Requirements and Expectations
-  * Design Choices
-      * Fonts
-      * Icons
-      * Colours
-      * Styling
-      * Images
-      * Backgrounds
-* Wireframes 
-* Features 
-  * Features that have been developed
-  * Features that will be implemented in the future
-* Technologies Used
-* Testing 
-* Bugs 
-* Deployment 
-* Credits
+## UX:superhero_man:	
+  * **Project Goals** :jigsaw:	
+  * **Project Goals** :jigsaw:	
+  * **Target Audience Goals** 	:dart:
+  * **Site Owner Goals**  	:dart:
+  * **User Requirements and Expectations** 	:dart:
+  * **Design Choices** :framed_picture:		
+    * Fonts
+    * Icons
+    * Colours
+    * Images
+  * **Wireframes** :straight_ruler:		
+  * **Features** :abacus:	
+    * Features that have been developed
+    * Features that will be implemented in the future
+  * **Technologies Used** :computer:	
+    * Languages
+    * Tools & Libraries
+  * **Testing** :magnet:
+  * **Bugs** :mosquito:
+  * **Deployment** :surfer:
+  * **Acknowledgements** :clap:
 
 ## UX 
 ### Project goals
