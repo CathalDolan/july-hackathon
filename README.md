@@ -43,23 +43,24 @@
 ### Project goals :jigsaw:	
 The goal of this project is to create an application that allows customers of the local coffee shop to order coffee and snacks for collection. Users will be available to make a decision to pay for order online or in store. The website has to allow the customers to make a quick purchase of the favourite drinks without having to go through a lot of content first.
 
-### Target Audience Goals
-**User goals**
+### Target Audience Goals :dart:
 
-* Ability to order coffee
-* Ability to order snacks
-* Ability to select the time to collect their order
-* Choice of payment option - online or at the store
-* Ability to contact the through the contact form
-* Interact with the website on both Desktop tablet or mobile
+* **User goals**
 
-**User Stories**
+ * Ability to order coffee
+ * Ability to order snacks
+ * Ability to select the time to collect their order
+ * Choice of payment option - online or at the store
+ * Ability to contact the through the contact form
+ * Interact with the website on both Desktop tablet or mobile
 
-* As a user I should be able to select a coffee drink
-* As a user I should be able to select a snack
-* As a user I should be able to set my collection time
-* As a user I should be able to send my order via sending JSON
-* As a user I expect to see all available coffees and snacks
+* **User Stories**
+
+ * As a user I should be able to select a coffee drink
+ * As a user I should be able to select a snack
+ * As a user I should be able to set my collection time
+ * As a user I should be able to send my order via sending JSON
+ * As a user I expect to see all available coffees and snacks
 
 ### Site Owner Goals  	:dart:
 
@@ -68,6 +69,26 @@ The goal of this project is to create an application that allows customers of th
 * Advertise their product and services
 * Receive contact details through use of contact form
 
+## User Requirements and Expectations 	:dart:
+
+**Requirements**
+  * Navigate the website using the navbar/pop-out nav
+  * Be provided with information of product and location of the business
+  * Contnent displayed in a visually appealing manor
+  * Ability to order coffe and snacks on the website
+  * Ability to see a total order and its price
+  * Ability to change order if need to
+  * Select a suitable collection time
+  
+**Expectations**
+  * Content is visually satisfying and informative on all screen sizes
+  * No information overload
+  * Navigation takes user to specific parts of the website
+  * Burger menu button appeares in place of navbar on tablet and mobile devices
+  * Total order is clearly visible
+  * I can choose how many items of the product I want to buy
+  * Coffes and Snacks sections are clearly divided on the page
+  * Prices are clearly visible
 
 
 ### Deployment :surfer:
