@@ -26,7 +26,6 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
-    top: 98px;
 }
 
 @media (max-width: 576px) {
@@ -121,12 +120,14 @@ p{
 /* === HEADER STYLES MOBILE FIRST === */
 
 /* == HEADER == */ 
-
+a:hover{
+    text-decoration: none;
+}
 header{
     background-color:var(--grey);
     border-bottom: 5px solid var(--yellow);
     padding: 20px 0;
-    position: fixed;
+    /*position: fixed;*/
     width: 100vw;
     min-width: 300px;
     z-index: 100;
@@ -213,9 +214,7 @@ list-style: none;
 }
   /* === TABLET MEDIA QUERY === */
 @media (min-width: 768px) {
-    main{
-        top: 139px;
-    }
+
 
     header{
         padding: 0;
@@ -306,7 +305,7 @@ header p {
 }
 
 /* === END OF HEADER STYLES === */ 
-
+/*-----------------------------------Home page*/
 .home-h2{
     text-align: center;
 }
@@ -333,6 +332,10 @@ hr{
     background-color: #525252;
     border: solid 5px var(--yellow);
     border-top: none;
+    text-align: center;
+    font-family: 'Nova Mono', serif;
+    color: rgb(242, 177, 10);
+    padding: 5px;
 }
 .container{
     margin-right: 5px;
@@ -341,7 +344,9 @@ hr{
 img{
     width: 100%;
 }
-
+#cafe_interior{
+    margin-bottom: 10px;
+}
 /*------------Foooter Styling------------*/
 footer{
     position: relative;

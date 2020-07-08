@@ -2,158 +2,176 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+		integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
 
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <script src="assets/js/app.js" defer></script>
+	<link rel="stylesheet" href="assets/css/style.css" />
+	<script src="assets/js/app.js" defer></script>
 
-  <title>Yellow Bourbon</title>
+	<title>Yellow Bourbon</title>
 </head>
 
 
 <body>
 
-  <!-- HEADER ----------------------------------------->
+	<!-- HEADER ----------------------------------------->
 
-  <header class="background-color--grey">
-    <div class="container-fluid background-color--gray header-container">
-      <div class="row">
+	<header class="background-color--grey">
+		<div class="container-fluid background-color--gray header-container">
+			<div class="row">
 
-        <div class="col-8 col-md-6  logo">
-          <h1>Yellow&nbspBourbon</h1>
-          <h2>Micro Roastery Coffee</h2>
-        </div>
+				<div class="col-8 col-md-6  logo">
+					<a class="link" href="index.html">
+						<h1>Yellow&nbspBourbon</h1>
+						<h2>Micro Roastery Coffee</h2>
+					</a>
+				</div>
 
-        <div class="col-4 col-md-6 nav-section">
-          <nav>
-            <div class="full-nav">
+				<div class="col-4 col-md-6 nav-section">
+					<nav>
+						<div class="full-nav">
 
-              <ul>
-                <a class="link" href="index.html">
-                  <li><i class="header-icon fas fa-home fa-fw"></i>Home</li>
-                </a>
-                <a class="link" href="menu.html">
-                  <li><i class="header-icon fas fa-coffee fa-fw"></i>Menu</li>
-                </a>
-                <a class="link" href="contact.html">
-                  <li><i class="header-icon fas fa-phone-alt fa-fw"></i>Contact</li>
-                </a>
-              </ul>
+							<ul>
+								<a class="link" href="index.html">
+									<li><i class="header-icon fas fa-home fa-fw"></i>Home</li>
+								</a>
+								<a class="link" href="menu.html">
+									<li><i class="header-icon fas fa-coffee fa-fw"></i>Menu</li>
+								</a>
+								<a class="link" href="contact.html">
+									<li><i class="header-icon fas fa-phone-alt fa-fw"></i>Contact</li>
+								</a>
+							</ul>
 
-              <p>Opening Times: Weekdays: 7:30am - 6pm | Saturday: 8am to 6pm | Sunday: 9am to 5pm</p>
+							<p>Opening Times: Weekdays: 7:30am - 6pm | Saturday: 8am to 6pm | Sunday: 9am to 5pm</p>
 
-            </div>
+						</div>
 
-            <span id="nav-burger"><i class="fa fa-bars" aria-hidden="true"></i></span>
+						<span id="nav-burger"><i class="fa fa-bars" aria-hidden="true"></i></span>
 
-          </nav>
-        </div>
+					</nav>
+				</div>
 
-      </div>
-    </div>
-  </header>
+			</div>
+		</div>
+	</header>
 
-  <main>
-    <section>
-      <div id="quick-order" class="container">
-        <div class="row">
-          <div class="col">
-            <h2>Quick order</h2>
-            <select name="quick-order-select" id="quick-order-select">
+	<main>
+		<section>
+			<div id="quick-order" class="container">
+				<div class="row">
+					<div class="col">
+						<form action=""><label for="quick-order-select">Quick Order</label>
+							<select name="quick-order-select" id="quick-order-select">
               <option value="flat-white">Flat White</option>
               <option value="americano">Americano</option>
               <option value="black-tea">Black Tea</option>
               <option value="espresso">Espresso</option>
             </select>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="main">
+							<input checked type="radio" id="6oz" name="qo-size" value="6oz">
+							<label for="6oz">6oz</label>
+							<input type="radio" id="8oz" name="qo-size" value="8oz">
+							<label for="8oz">8oz</label>
+							<label for="q-o-name">Name:</label>
+							<input type="text" name="name" id="q-o-name" required>
+							<button id="q-o-btn" type="submit">Order</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="main">
 
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-7">
-            <h2 class="home-h2">We Love Fresh Coffee</h2>
-            <p class="home-p">We are an independent artisan coffee roaster and cafe located in the heart of Cork.
-              We love fresh coffee which we offer wholesale or by the bag.
-              Why not come in and try our signature coffee and enjoy a slice of something sweet from our tasty
-              cake selection.</p>
-          </div>
-          <div class="col-12 col-md-5">
-            <img src="assets/images/cafe_front.jpg" alt="Cafe Front">
+			<div class="container">
+				<div class="row">
+					<div class="col-12 col-md-7">
+						<h2 class="home-h2">We Love Fresh Coffee</h2>
+						<p class="home-p">We are an independent artisan coffee roaster and cafe located in the heart of
+							Cork.
+							We love fresh coffee which we offer wholesale or by the bag.
+							Why not come in and try our signature coffee and enjoy a slice of something sweet from our
+							tasty
+							cake selection.</p>
+					</div>
+					<div class="col-12 col-md-5">
+						<img src="assets/images/cafe_front.jpg" alt="Cafe Front">
           </div>
 
-        </div>
-      </div>
-      <hr>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-5">
-            <img class="home-images" src="assets/images/roasting.jpg" alt="Roasting coffee beans">
+					</div>
+				</div>
+				<hr>
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-md-5">
+							<img class="home-images" src="assets/images/roasting.jpg" alt="Roasting coffee beans">
           </div>
-          <div class="col-12 col-md-7 roastery-text">
-            <h2 class="home-h2">Roastery</h2>
-            <p class="home-p">We roast in small quantities allowing us to offer truly fresh coffee to you. Using gentle
-              roasting techniques, taking more time and care, ensuring flavours and aromas remain intact.
-              We are transparent in our sourcing, allowing us to gain the providence from the farm to our
-              green bean merchant to us. Farmers are rewarded with good prices for quality coffee, making the
-              supply chain a truly sustainable model.</p>
-          </div>
-        </div>
-      </div>
-      <hr>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-md-7">
-            <h2 class="home-h2">Location</h2>
-            <p class="home-p">A friendly and relaxed atmosphere with plenty of seating inside and a courtyard outside to
-              enjoy
-              a brew in the sunshine.
-              It is the ideal place to come and check out our full range of retail coffee beans – available to
-              take home. <br>
+							<div class="col-12 col-md-7 roastery-text">
+								<h2 class="home-h2">Roastery</h2>
+								<p class="home-p">We roast in small quantities allowing us to offer truly fresh coffee
+									to you. Using gentle
+									roasting techniques, taking more time and care, ensuring flavours and aromas remain
+									intact.
+									We are transparent in our sourcing, allowing us to gain the providence from the farm
+									to our
+									green bean merchant to us. Farmers are rewarded with good prices for quality coffee,
+									making the
+									supply chain a truly sustainable model.</p>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="container">
+						<div class="row">
+							<div class="col-12 col-md-7">
+								<h2 class="home-h2">Location</h2>
+								<p class="home-p">A friendly and relaxed atmosphere with plenty of seating inside and a
+									courtyard outside to
+									enjoy
+									a brew in the sunshine.
+									It is the ideal place to come and check out our full range of retail coffee beans –
+									available to
+									take home. <br>
               Opening times: Weekdays: 7.30am – 6pm | Saturday: 8am – 6pm | Sunday: 9am – 5pm <br>
               2 min walk from The English Market
               Address: 2 French Church St, Centre, Cork, T12 E94K, Ireland</p>
+							</div>
+							<div class="col-12 col-md-5">
+								<img id="cafe_interior" src="assets/images/cafe_interior.jpg" alt="Cafe interior">
           </div>
-          <div class="col-12 col-md-5">
-            <img src="assets/images/cafe_interior.jpg" alt="Cafe interior">
-          </div>
 
-        </div>
-      </div>
-    </section>
-  </main>
+							</div>
+						</div>
+		</section>
+	</main>
 
-  <!-- FOOTER ----------------------------------------->
+	<!-- FOOTER ----------------------------------------->
 
-  <footer>
+	<footer>
 
-    <div class="container-fluid background-color--grey footer-container">
-      <div class="row">
+		<div class="container-fluid background-color--grey footer-container">
+			<div class="row">
 
-        <div class="col-12 col-md-4 footer-item">
-          <p class="uppercase"> Yellow Bourbon<span>TM</span><br>Micro Coffee</p>
-        </div>
+				<div class="col-12 col-md-4 footer-item">
+					<p class="uppercase"> Yellow Bourbon<span>TM</span><br>Micro Coffee</p>
+				</div>
 
-        <div class="col-12 col-md-4 footer-item">
-          <a href="https://twitter.com/explore" target="_blank"><i class="fab fa-twitter-square"></i></a>
-          <a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
-          <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
-          <a href="contact.html"><i class="fas fa-envelope"></i></a>
-        </div>
+				<div class="col-12 col-md-4 footer-item">
+					<a href="https://twitter.com/explore" target="_blank"><i class="fab fa-twitter-square"></i></a>
+					<a href="https://www.instagram.com/?hl=en" target="_blank"><i class="fab fa-instagram"></i></a>
+					<a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a>
+					<a href="contact.html"><i class="fas fa-envelope"></i></a>
+				</div>
 
-        <div class="col-12 col-md-4 footer-item">
-          <p>Tel: 01 1234567 <br> yellowbourbon@coffee.com</p>
-        </div>
+				<div class="col-12 col-md-4 footer-item">
+					<p>Tel: 01 1234567 <br> yellowbourbon@coffee.com</p>
+				</div>
 
-      </div>
-  </footer>
+			</div>
+	</footer>
 
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.slim.min.js"></script>
