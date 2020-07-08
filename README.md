@@ -50,3 +50,32 @@ The goal of this project is to create an application that allows customers of th
 * As a user I should be able to send my order via sending JSON
 * As a user I expect to see all available coffees and snacks
 
+### Deployment :surfer:
+
+july-hackathon was developed using git and GitHub to host the repository.
+
+When deploying july-hackathon using GitHub Pages the following steps were made:
+
+* Opened up GitHub in the browser.
+* Signed in using username and password.
+* Selected my repositories.
+* Navigated to ``bryansmullen/july-hackathon``.
+* In the top navigation clicked **'settings'**.
+* Scrolled down to the GitHub Pages area.
+* Selected **'Master Branch'** from the **'Source'** dropdown menu.
+* Clicked to confirm my selection.
+* july-hackathon now live on GitHub Pages. :rocket: 
+
+#### Running july-hackathon Locally
+
+Cloning july-hackathon from GitHub:
+
+* Navigate to ``/bryansmullen/july-hackathon``.
+* Click the green **'Clone or Download'** button.
+* Copy the url in the dropdown box.
+* Using your favourite IDE open up your preferred terminal.
+* Navigate to your desired file location.
+* Copy the following code and input it into your terminal to clone Waffle Way.
+```
+https://github.com/bryansmullen/july-hackathon.git
+```
