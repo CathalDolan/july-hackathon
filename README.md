@@ -45,7 +45,7 @@ The goal of this project is to create an application that allows customers of th
 
 ### Target Audience Goals :dart:
 
-* **User goals**
+**User goals**
 
  * Ability to order coffee
  * Ability to order snacks
@@ -54,7 +54,7 @@ The goal of this project is to create an application that allows customers of th
  * Ability to contact the through the contact form
  * Interact with the website on both Desktop tablet or mobile
 
-* **User Stories**
+**User Stories**
 
  * As a user I should be able to select a coffee drink
  * As a user I should be able to select a snack
@@ -69,7 +69,7 @@ The goal of this project is to create an application that allows customers of th
 * Advertise their product and services
 * Receive contact details through use of contact form
 
-## User Requirements and Expectations 	:dart:
+### User Requirements and Expectations 	:dart:
 
 **Requirements**
   * Navigate the website using the navbar/pop-out nav
@@ -90,6 +90,42 @@ The goal of this project is to create an application that allows customers of th
   * Coffes and Snacks sections are clearly divided on the page
   * Prices are clearly visible
 
+### Design choices :framed_picture:
+
+**Fonts**
+
+**Icons**
+
+The icons used are self explanatory so that the user does not need to struggle to interpret what the icon will actually mean.
+
+**Colours**
+
+**Images**
+
+### Wireframes :straight_ruler:
+
+### Features :abacus:
+
+### Technologies Used :computer:
+
+#### Languages
+* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+* [JavaScript](https://www.w3schools.com/js/)
+
+#### Tools & Libraries
+* [PopperJS](https://popper.js.org/)
+* [jQuery](https://jquery.com/)
+* [Git](https://git-scm.com/)
+* [Bootstrap](https://getbootstrap.com/)
+* [Font-Awesome](https://fontawesome.com/icons?d=gallery)
+* [Google Maps](https://www.google.com/maps/)
+* [Google Fonts](https://fonts.google.com/)
+* [Balsamiq](https://balsamiq.com/)
+* [AmIresponsive](http://ami.responsivedesign.is/) - used to generate multi screen view of the webiste on different devices
+
+### Testing :magnet:
+### Bugs :mosquito:
 
 ### Deployment :surfer:
 
@@ -120,3 +156,5 @@ Cloning july-hackathon from GitHub:
 ```
 https://github.com/bryansmullen/july-hackathon.git
 ```
+
+### Acknowledgements :clap:
