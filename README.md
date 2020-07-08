@@ -20,8 +20,8 @@
 ## UX:superhero_man:	
   * **Project Goals** :jigsaw:	
   * **Target Audience Goals** 	:dart:
-   * User goals
-   * User stories
+    * User goals
+    * User stories
   * **Site Owner Goals**  	:dart:
   * **User Requirements and Expectations** 	:dart:
   * **Design Choices** :framed_picture:		
@@ -51,9 +51,9 @@ The goal of this project is to create an application that allows customers of th
 
  * Ability to order coffee
  * Ability to order snacks
- * Ability to select the time to collect their order
+ * Ability to select the time to collect the order
  * Choice of payment option - online or at the store
- * Ability to contact the through the contact form
+ * Ability to contact the cafee through the contact form
  * Interact with the website on both Desktop tablet or mobile
 
 **User Stories**
