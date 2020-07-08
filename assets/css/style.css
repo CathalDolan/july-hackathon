@@ -215,9 +215,7 @@ list-style: none;
 }
   /* === TABLET MEDIA QUERY === */
 @media (min-width: 768px) {
-    main{
-        top: 139px;
-    }
+
 
     header{
         padding: 0;
