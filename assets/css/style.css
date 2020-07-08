@@ -117,7 +117,9 @@ p{
 /* === HEADER STYLES MOBILE FIRST === */
 
 /* == HEADER == */ 
-
+a:hover{
+    text-decoration: none;
+}
 header{
     background-color:var(--grey);
     border-bottom: 5px solid var(--yellow);
@@ -319,6 +321,7 @@ hr{
     text-align: center;
     font-family: 'Nova Mono', serif;
     color: rgb(242, 177, 10);
+    padding: 5px;
 }
 .container{
     margin-right: 5px;
@@ -327,7 +330,9 @@ hr{
 img{
     width: 100%;
 }
-
+#cafe_interior{
+    margin-bottom: 10px;
+}
 /*------------Foooter Styling------------*/
 
 footer p{
