@@ -1,10 +1,10 @@
-# july-hackathon
+# july-hackathon - **Yellow Bourbon** :coffee:
 
 [View Live Project Here](###)
 
 **july-hackathon** is an application used by a local coffe shop called **Yellow Bourbon** to allow its customers to order coffee and snacks online and collect them at the shop. It also gives their customers a chance to contact the shop by using a contact  form. This project has been developed for the purpose of a *CodeIinstitute* July *hackathon* competition by a group of 6 student developers.
 
-## Team members:
+## Team members :trophy:
 * ``https://github.com/bryansmullen`` **Owner of the repository:** 
 * ``https://github.com/CathalDolan``
 * ``https://github.com/NickBaker11``
