@@ -12,6 +12,8 @@ html {
 
 }
 
+
+
 .container{
     margin-right: 5px;
     margin-left: 5px;
@@ -184,6 +186,12 @@ list-style: none;
     border-bottom: 1px solid var(--yellow);
     width: 100vw;
 
+}
+
+.full-nav ul li{
+    
+    border-bottom: none;
+    
 }
 #nav-burger{
     color: var(--yellow);

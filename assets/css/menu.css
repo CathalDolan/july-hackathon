@@ -1,9 +1,16 @@
 div.section_container { /* Over rides the styling in styles.css */
     background-color: var(--grey);
-    margin: 0.5rem auto;
+    margin-bottom: 0.5rem;
     overflow: hidden; 
 }
 
+main{
+    top: 155px;
+}
+
+footer{
+    top: 155px;
+}
 .card-header {
     padding: 0;
     margin-bottom: 0.5rem;
