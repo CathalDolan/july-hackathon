@@ -116,6 +116,14 @@ Color palette cna be viewed [here](https://coolors.co/f2b10a-343434-fafafa)
 
 **Images**
 
+Images for this project were sourced from other webistes. Due to the purpose of this project being a contender in a closed competition we used copyright images.
+**Sources**
+ * [Cafee front](https://www.pinterest.co.uk/pin/241505598743043689/)
+ * [Cofee beans](https://www.wallsauce.com/eu/wall-murals-wallpaper/coffee-beans-mural-wallpaper)
+ * [Roasting coffee](https://gearpatrol.com/2016/01/12/understanding-the-finer-points-of-coffee-bean-roast/)
+ * [Brownies](https://www.goodtoknow.co.uk/recipes/chocolate-brownies)
+
+
 ### Wireframes :straight_ruler:
 Wireframes were first created using [Balsamiq](https://balsamiq.com/) to get a general set up of pages in the project. Later during the developement process [Cathan Dolan](https://github.com/CathalDolan) created a more live wireframes for each device size, using Corel Draw.
 
@@ -173,3 +181,4 @@ https://github.com/bryansmullen/july-hackathon.git
 ```
 
 ### Acknowledgements :clap:
+
