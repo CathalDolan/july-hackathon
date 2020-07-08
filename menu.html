@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <link rel="stylesheet" href="assets/css/menu.css" type="text/css">
+    <script src="assets/js/menu.js" defer></script>
     <title>Yellow Bourbon</title>
 
 </head>
@@ -211,12 +212,12 @@
                         <div class="clear div-center price_div_left">
                             <h3 class="yellow_text price">3.50
                             </h3>
-                            <div class="add" data-name="tiger-eye-sm" data-price="3.50">+</div>
+                            <div class="add add_to_cart" data-name="tiger-eye-sm" data-price="3.50">+</div>
                         </div>
                         <div class="clear div-center  price_div_right">
                             <h3 class="yellow_text price">
                                 3.95</h3>
-                            <div class="add" data-name="tiger-eye-lg" data-price="3.95">+</div>
+                            <div class="add add_to_cart" data-name="tiger-eye-lg" data-price="3.95">+</div>
                         </div>
                     </div>
                     <div class="card-body row_container">
@@ -414,6 +415,13 @@
 
         <!-- Order Container-->
         <section>
+            <ul id="show_cart">
+                Your Cart is Empty
+            </ul>
+            <div>Total Items: <span id="total_items"></span></div>
+            <div>Total Cart: <span id="total_cart"></span></div>
+            <button id="clear_cart">X</button>
+            <!--             
             <div id="order_section" class="section_container">
                 <form action="">
                     <div id="" class="">
@@ -464,7 +472,7 @@
                                     <p>Total:</p>
                                 </div>
                                 <div class="col col-2">
-                                    <p>2</p>
+                                    <p id="total_items">2</p>
                                 </div>
                                 <div class="col col-2">
                                 </div>
@@ -484,34 +492,34 @@
                                 <div class="time_col col-6"><input checked type="radio" id="10min" name="pickup"
                                         value="10min">
                                     <!-- col-xs-2 is what makes the buttons fill the available space -->
-                                    <label for="10min">10 minutes</label>
-                                </div>
-                                <div class="time_col col-6"><input type="radio" id="15min" name="pickup" value="15min">
-                                    <label for="15min">15 minutes</label>
-
-                                </div>
-                                <div class="time_col col-6"><input type="radio" id="20min" name="pickup" value="20min">
-                                    <label for="20min">20 minutes</label>
-
-                                </div>
-                                <div class="time_col col-6"><input type="radio" id="30min" name="pickup" value="30min">
-                                    <label for="30min">30 Minutes</label>
-                                </div>
-                            </div>
-
-                        </div>
-
-
-                        <div class="row_container">
-                            <input type="time" id="appt" name="appt" class="floatR">
-                            <p class="floatR">Or choose a time:</p>
-                        </div>
-                        <div class="order_button row_container">
-                            <button type="button" class="btn">Order</button>
-                        </div>
-                    </div>
-                </form>
+            <label for="10min">10 minutes</label>
             </div>
+            <div class="time_col col-6"><input type="radio" id="15min" name="pickup" value="15min">
+                <label for="15min">15 minutes</label>
+
+            </div>
+            <div class="time_col col-6"><input type="radio" id="20min" name="pickup" value="20min">
+                <label for="20min">20 minutes</label>
+
+            </div>
+            <div class="time_col col-6"><input type="radio" id="30min" name="pickup" value="30min">
+                <label for="30min">30 Minutes</label>
+            </div>
+            </div>
+
+            </div>
+
+
+            <div class="row_container">
+                <input type="time" id="appt" name="appt" class="floatR">
+                <p class="floatR">Or choose a time:</p>
+            </div>
+            <div class="order_button row_container">
+                <button type="button" class="btn">Order</button>
+            </div>
+            </div>
+            </form>
+            </div> -->
         </section>
 
     </main>
