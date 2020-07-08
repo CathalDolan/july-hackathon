@@ -103,7 +103,7 @@ Fonts used are :
 
 **Icons**
 
-The icons used are self explanatory so that the user does not need to struggle to interpret what the icon will actually mean. Later during the process [Cathan Dolan](https://github.com/CathalDolan) created a more alive wireframes for each device size, using Corel Draw.
+The icons used are self explanatory so that the user does not need to struggle to interpret what the icon will actually mean.
 
 **Colours**
 
@@ -117,7 +117,7 @@ Color palette cna be viewed [here](https://coolors.co/f2b10a-343434-fafafa)
 **Images**
 
 ### Wireframes :straight_ruler:
-Wireframes were first created using [Balsamiq](https://balsamiq.com/) to get a general set up of pages in the project. Later on 
+Wireframes were first created using [Balsamiq](https://balsamiq.com/) to get a general set up of pages in the project. Later during the developement process [Cathan Dolan](https://github.com/CathalDolan) created a more live wireframes for each device size, using Corel Draw.
 
 ### Features :abacus:
 
