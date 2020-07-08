@@ -4,9 +4,6 @@ div.section_container { /* Over rides the styling in styles.css */
     overflow: hidden; 
 }
 
-main{
-    top: 155px;
-}
 
 footer{
     top: 155px;
