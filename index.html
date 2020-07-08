@@ -63,13 +63,19 @@
       <div id="quick-order" class="container">
         <div class="row">
           <div class="col">
-            <h2>Quick order</h2>
+            <form action=""><label for="quick-order-select">Quick Order</label>
             <select name="quick-order-select" id="quick-order-select">
               <option value="flat-white">Flat White</option>
               <option value="americano">Americano</option>
               <option value="black-tea">Black Tea</option>
               <option value="espresso">Espresso</option>
             </select>
+            <input type="radio" id="6oz" name="qo-size" value="6oz">
+            <label for="6oz">6oz</label>
+            <input type="radio" id="8oz" name="qo-size" value="8oz">
+            <label for="8oz">8oz</label>
+            <input type="submit">
+            </form>
           </div>
         </div>
       </div>

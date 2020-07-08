@@ -159,13 +159,13 @@ h3.price {
 .price_div_left {
     position: absolute;
     top: 0;
-    right: 0;
+    right: 35px;
 }
 
 .price_div_right {
     position: absolute;
     top: 0;
-    right: 35px;
+    right: 0;
 }
 
 .qty_selector_input {
