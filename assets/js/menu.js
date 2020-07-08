@@ -7,16 +7,34 @@ $(".add_to_cart").click(function(event){      //Function to call the name and pr
     displayCart();
 });
 
+$("#clear_cart").click(function(event){
+    clearCart();
+    displayCart();
+});
+
 function displayCart() { // Displays the cart contents on front end
     var cartArray = listCart();
     var output = "";
     for (var i in cartArray) {
-        output += "<li>"+cartArray[i].name+" "+cartArray[i].count+"</li>"
+        output += "<li>"
+            +cartArray[i].name
+            +" "+cartArray[i].count
+            +" x "+cartArray[i].price
+            +" = "+cartArray[i].total
+            +" <button class='delete_item' data-name='"
+            +cartArray[i].name+"'>X</button>"
+            +"</li>";
     }
     $("#show_cart").html(output);
+    $("#total_items").html( countCart());
     $("#total_cart").html( totalCart() );
 }
 
+$("#show_cart").on("click", ".delete_item", function(event) {
+    var name = $(this).attr("data-name");
+    removeItemFromCartAll(name);
+    displayCart();
+});
 
 // Shopping Cart Functions
 
@@ -32,6 +50,7 @@ function addItemToCart(name, price, count) {
     for (var i in cart) { // Loop to check cart contents. 
         if (cart[i].name === name){ // Matches by name
             cart[i].count ++; // If an item is already in the cart, it increases the count by 1.   .cart[i].count += count; This could work for sausage rolls as they are sold in 3's
+            // saveCart();    Part of local storage
             return;
         }
     }
@@ -40,9 +59,7 @@ function addItemToCart(name, price, count) {
     // saveCart();    Part of local storage
 }
 
-
-
-function removeItemToCart(name){ // To remove a single item, for example remove one tea
+function removeItemFromCart(name){ // To remove a single item, for example remove one tea
     for (var i in cart) {
         if (cart[i].name === name){
             cart[i].count --; //reduces count by 1
@@ -55,7 +72,7 @@ function removeItemToCart(name){ // To remove a single item, for example remove 
     // saveCart();    Part of local storage
 }
 
-function removeItemToCartAll(name) { // To remove all of a particular item, for example remove all teas
+function removeItemFromCartAll(name) { // To remove all of a particular item, for example remove all teas
     for (var i in cart) {
         if (cart[i].name === name){
             cart.splice(i, 1);
@@ -81,9 +98,9 @@ function countCart() { // counts total number of items in cart by adding the tot
 function totalCart() { // counts total cost of all items in cart by adding the total of the prices
     var totalCost = 0; //Goes outside the loop so that the count starts at 0 only once....I think
     for (var i in cart){
-        totalCost += (cart[i].price) * (cart[i].count);     
+        totalCost += cart[i].price * cart[i].count;     
     }
-    return totalCost;
+    return totalCost.toFixed(2);
 }
 
 function listCart() { // return an array of items to display on the page, but it doesn't display directly to the html. It's "decoupled". Tutorial Video #12 https://www.youtube.com/watch?v=MTY-84b8fik&list=PLoN_ejT35AEhzNoPStBzAkpqAu3YQwPj7&index=12
@@ -94,6 +111,7 @@ function listCart() { // return an array of items to display on the page, but it
         for (var p in item) {
             itemCopy[p] = item[p];
         }
+        itemCopy.total = (item.price * item.count).toFixed(2); //toFixed rounds to 2 decimal places.
         cartCopy.push(itemCopy);
     }
     return cartCopy
