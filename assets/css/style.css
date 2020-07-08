@@ -12,6 +12,8 @@ html {
 
 }
 
+
+
 .container{
     margin-right: 5px;
     margin-left: 5px;
@@ -24,7 +26,9 @@ main {
     max-width: 1200px;
     margin: 0 auto;
     position: relative;
+    top: 98px;
 }
+
 @media (max-width: 576px) {
     main{
         width: 95%;
@@ -183,6 +187,12 @@ list-style: none;
     width: 100vw;
 
 }
+
+.full-nav ul li{
+    
+    border-bottom: none;
+    
+}
 #nav-burger{
     color: var(--yellow);
     font-size: 16px;
@@ -199,10 +209,17 @@ list-style: none;
     .full-nav{
         top:105px;
     }
+    
 }
   /* === TABLET MEDIA QUERY === */
 @media (min-width: 768px) {
+    main{
+        top: 139px;
+    }
 
+    header{
+        padding: 0;
+    }
     /* == NAV SECTION == */
 
 
@@ -326,6 +343,10 @@ img{
 }
 
 /*------------Foooter Styling------------*/
+footer{
+    position: relative;
+    top: 139px;
+}
 
 footer p{
     color:var(--yellow);

@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <meta name="Description" content="Enter your description here" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="stylesheet" href="assets/css/contact.css" type="text/css">
-    </head>
-  <body>
 
-   <!-- HEADER ----------------------------------------->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="Description" content="Enter your description here" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/contact.css" type="text/css">
+</head>
+
+<body>
+
+  <!-- HEADER ----------------------------------------->
 
   <header class="background-color--grey">
     <div class="container-fluid background-color--gray header-container">
@@ -51,60 +53,75 @@
       </div>
     </div>
   </header>
-    <!--       -->
-    <!--Form-->
+  <!--       -->
+  <!--Form-->
+  <main>
     <section class="container main main-contact">
-        <div class="row contact-container justify-content-center justify-content-sm-around align-items-center">
-            <div class="col-12 col-sm-6 form-wrapper">    
-                <div class="contact-form">
-                    <h3 class="form-header">Send us a message</h3>
-                    <form>
-                        <div class="form-group">
-                            <input type="text" class="form-control" name="name" placeholder="Name*" aria-label="name" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="email" class="form-control" name="email" placeholder="Email" aria-label="email" required>
-                        </div>
-                        <div class="form-group">
-                            <input type="phone" class="form-control" name="phone" placeholder="Contact number" aria-label="contact number" required>
-                        </div>
-                        <div class="form-group">
-                            <textarea class="form-control" id="textarea" name="message" placeholder="Your message" aria-label="message" rows="12"></textarea>
-                        </div>
-                        <button type="submit" class="form-button">Submit</button>
-                    </form>
-                </div>
-            </div>
-    <!--Location address-->
-            <div class="col-12 col-sm-6 location-wrapper">
-                <div class="location-address">
-                    <ul class="list-group">
-                        <li class="list-group-item"><h3>Find us at:</h3></li>
-                        <li class="list-group-item"><h4><b>Yellow Bourbon</b></h4></li>
-                        <li class="list-group-item item-top">2 French Church St</li>
-                        <li class="list-group-item item-top">Centre</li>
-                        <li class="list-group-item item-top">Cork</li>
-                        <li class="list-group-item item-top">T12 E94K</li>
-                    </ul>
-                    <ul class="list-group">
-                        <li class="list-group-item" id="tel"><b>Tel:</b> 01707 7415778</li>
-                        <li class="list-group-item" id="email">yellowbourbon@coffee.com</li>
-                    </ul>
-                </div>
-<!--Location map-->
-    <!--Code taken from https://www.embed-map.com/-->
-                <div class="location-map" style="overflow:hidden;max-width:100%;width:250px;height:250px;">
-                    <div id="embedmap-display" style="height:100%; width:100%;max-width:100%;">
-                        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=T12E94K&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
-                    </div>
-                    <a class="googlemap-enabler" href="https://changing.hosting" id="make-mapdata">Changing Hosting</a>
-                    <style>#embedmap-display img{max-width:none!important;background:none!important;font-size: inherit;font-weight:inherit;}</style>
-                </div>
-    <!--========-->
-            </div>
+      <div class="row contact-container justify-content-center justify-content-sm-around align-items-center">
+        <div class="col-12 col-sm-6 form-wrapper">
+          <div class="contact-form">
+            <h3 class="form-header">Send us a message</h3>
+            <form>
+              <div class="form-group">
+                <input type="text" class="form-control" name="name" placeholder="Name*" aria-label="name" required>
+              </div>
+              <div class="form-group">
+                <input type="email" class="form-control" name="email" placeholder="Email" aria-label="email" required>
+              </div>
+              <div class="form-group">
+                <input type="phone" class="form-control" name="phone" placeholder="Contact number"
+                  aria-label="contact number" required>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="textarea" name="message" placeholder="Your message"
+                  aria-label="message" rows="12"></textarea>
+              </div>
+              <button type="submit" class="form-button">Submit</button>
+            </form>
+          </div>
         </div>
+        <!--Location address-->
+        <div class="col-12 col-sm-6 location-wrapper">
+          <div class="location-address">
+            <ul class="list-group">
+              <li class="list-group-item">
+                <h3>Find us at:</h3>
+              </li>
+              <li class="list-group-item">
+                <h4><b>Yellow Bourbon</b></h4>
+              </li>
+              <li class="list-group-item item-top">2 French Church St</li>
+              <li class="list-group-item item-top">Centre</li>
+              <li class="list-group-item item-top">Cork</li>
+              <li class="list-group-item item-top">T12 E94K</li>
+            </ul>
+            <ul class="list-group">
+              <li class="list-group-item" id="tel"><b>Tel:</b> 01707 7415778</li>
+              <li class="list-group-item" id="email">yellowbourbon@coffee.com</li>
+            </ul>
+          </div>
+          <!--Location map-->
+          <!--Code taken from https://www.embed-map.com/-->
+          <div class="location-map" style="overflow:hidden;max-width:100%;width:250px;height:250px;">
+            <div id="embedmap-display" style="height:100%; width:100%;max-width:100%;">
+              <iframe style="height:100%;width:100%;border:0;" frameborder="0"
+                src="https://www.google.com/maps/embed/v1/place?q=T12E94K&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+            </div>
+            <a class="googlemap-enabler" href="https://changing.hosting" id="make-mapdata">Changing Hosting</a>
+            <style>
+              #embedmap-display img {
+                max-width: none !important;
+                background: none !important;
+                font-size: inherit;
+                font-weight: inherit;
+              }
+            </style>
+          </div>
+          <!--========-->
+        </div>
+      </div>
     </section>
-    
+  </main>
   <!-- FOOTER ----------------------------------------->
 
   <footer>
