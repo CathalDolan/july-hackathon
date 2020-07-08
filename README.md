@@ -6,7 +6,7 @@
 
 ## Team members :trophy:
 * [Bryan Mullen](https://github.com/bryansmullen) - **Owner of the repository** 
-* [Cathan Dolan](https://github.com/CathalDolan)
+* [Cathal Dolan](https://github.com/CathalDolan)
 * [Nick Baker](https://github.com/NickBaker11)
 * [John GC](https://github.com/JohnGC1510)
 * [Kostas Panagiotou](https://github.com/lordcostas)
@@ -125,7 +125,7 @@ Images for this project were sourced from other webistes. Due to the purpose of 
 
 
 ### Wireframes :straight_ruler:
-Wireframes were first created using [Balsamiq](https://balsamiq.com/) to get a general set up of pages in the project. Later during the developement process [Cathan Dolan](https://github.com/CathalDolan) created a more live wireframes for each device size, using Corel Draw.
+Wireframes were first created using [Balsamiq](https://balsamiq.com/) to get a general set up of pages in the project. Later during the developement process [Cathal Dolan](https://github.com/CathalDolan) created a more live wireframes for each device size, using Corel Draw.
 
 ### Features :abacus:
 
