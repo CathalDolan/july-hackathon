@@ -438,3 +438,11 @@ footer p{
 .clearR {
     clear: right;
 }
+
+
+.add {
+    background-color: var(--yellow);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
