@@ -5,12 +5,12 @@
 **july-hackathon** is an application used by a local coffe shop called **Yellow Bourbon** to allow its customers to order coffee and snacks online and collect them at the shop. It also gives their customers a chance to contact the shop by using a contact  form. This project has been developed for the purpose of a *CodeIinstitute* July *hackathon* competition by a group of 6 student developers.
 
 ## Team members :trophy:
-* ``https://github.com/bryansmullen`` - **Owner of the repository** 
-* ``https://github.com/CathalDolan``
-* ``https://github.com/NickBaker11``
-* ``https://github.com/JohnGC1510``
-* ``https://github.com/lordcostas``
-* ``https://github.com/bartosz-makowski``
+* [Bryan Mullen](https://github.com/bryansmullen) - **Owner of the repository** 
+* [Cathan Dolan](https://github.com/CathalDolan)
+* [Nick Baker](https://github.com/NickBaker11)
+* [John GC](https://github.com/JohnGC1510)
+* [Kostas Panagiotou](https://github.com/lordcostas)
+* [Bartosz Makowski](https://github.com/bartosz-makowski)
 
 
 
@@ -95,16 +95,29 @@ The goal of this project is to create an application that allows customers of th
 ### Design choices :framed_picture:
 
 **Fonts**
+Fonts used are : 
+ * [Ultra](https://fonts.google.com/specimen/Ultra?query=ultra)
+ * [Yellowtail](https://fonts.google.com/specimen/Yellowtail?query=yellow)
+ * [Nova Mono](https://fonts.google.com/specimen/Nova+Mono?query=Nova)
+ * [Yanone Kaffeesatz](https://fonts.google.com/specimen/Yanone+Kaffeesatz?query=Yano)
 
 **Icons**
 
-The icons used are self explanatory so that the user does not need to struggle to interpret what the icon will actually mean.
+The icons used are self explanatory so that the user does not need to struggle to interpret what the icon will actually mean. Later during the process [Cathan Dolan](https://github.com/CathalDolan) created a more alive wireframes for each device size, using Corel Draw.
 
 **Colours**
+
+Main colors are:
+* Selective yellow: rgb(242, 177, 10);
+* Jet rgb(52, 52, 52);
+* Cultured rgb(250, 250, 250);
+
+Color palette cna be viewed [here](https://coolors.co/f2b10a-343434-fafafa)
 
 **Images**
 
 ### Wireframes :straight_ruler:
+Wireframes were first created using [Balsamiq](https://balsamiq.com/) to get a general set up of pages in the project. Later on 
 
 ### Features :abacus:
 
