@@ -1,8 +1,8 @@
-# july-hackathon - **Yellow Bourbon** :coffee:
+# **Yellow Bourbon** :coffee:
 
 [View Live Project Here](https://bryansmullen.github.io/july-hackathon/)
 
-**july-hackathon** is an application used by a local coffe shop called **Yellow Bourbon** to allow its customers to order coffee and snacks online and collect them at the shop. It also gives their customers a chance to contact the shop by using a contact  form. This project has been developed for the purpose of a **CodeIinstitute July hackathon** competition by a group of 6 student developers.
+**Yellow Bourbon** is an application used by a local coffe shop called **Yellow Bourbon** to allow its customers to order coffee and snacks online and collect them at the shop. It also gives their customers a chance to contact the shop by using a contact  form. This project has been developed for the purpose of a **CodeIinstitute July hackathon** competition by a group of 6 student developers.
 
 ## Team members :trophy:
 * [Bryan Mullen](https://github.com/bryansmullen) - **Owner of the repository** 
@@ -157,9 +157,9 @@ Wireframes were first created using [Balsamiq](https://balsamiq.com/) to get a g
 
 ### Deployment :surfer:
 
-july-hackathon was developed using git and GitHub to host the repository.
+**Yellow Bourbon** was developed using git and GitHub to host the repository.
 
-When deploying july-hackathon using GitHub Pages the following steps were made:
+When deploying **Yellow Bourbon** using GitHub Pages the following steps were made:
 
 * Opened up GitHub in the browser.
 * Signed in using username and password.
@@ -169,18 +169,18 @@ When deploying july-hackathon using GitHub Pages the following steps were made:
 * Scrolled down to the GitHub Pages area.
 * Selected **'Master Branch'** from the **'Source'** dropdown menu.
 * Clicked to confirm my selection.
-* july-hackathon now live on GitHub Pages. :rocket: 
+* **Yellow Bourbon** now live on GitHub Pages. :rocket: 
 
-#### Running july-hackathon Locally
+#### Running Yellow Bourbon Locally
 
-Cloning july-hackathon from GitHub:
+Cloning **Yellow Bourbon** from GitHub:
 
 * Navigate to ``/bryansmullen/july-hackathon``.
 * Click the green **'Clone or Download'** button.
 * Copy the url in the dropdown box.
 * Using your favourite IDE open up your preferred terminal.
 * Navigate to your desired file location.
-* Copy the following code and input it into your terminal to clone Waffle Way.
+* Copy the following code and input it into your terminal to clone **Yellow Bourbon**.
 ```
 https://github.com/bryansmullen/july-hackathon.git
 ```
