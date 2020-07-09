@@ -350,7 +350,6 @@ img{
 /*------------Foooter Styling------------*/
 footer{
     position: relative;
-    top: 139px;
 }
 
 footer p{
@@ -437,4 +436,18 @@ footer p{
 
 .clearR {
     clear: right;
+}
+
+
+.add {
+    background-color: var(--yellow);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.home_text {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
 }

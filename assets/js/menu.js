@@ -25,9 +25,16 @@ function displayCart() { // Displays the cart contents on front end
             +cartArray[i].name+"'>X</button>"
             +"</li>";
     }
+
+    $("#item_name").html(cartArray[i].name);
+    $("#item_count").html(cartArray[i].count);
+    $("#item_price").html(cartArray[i].price.toFixed(2));
+    $("#items_total").html(cartArray[i].total.toFixed(2));
+    //$(".trash").html(<button class='delete_item' data-name='"cartArray[i].name"'>X</button>);
+
     $("#show_cart").html(output);
     $("#total_items").html( countCart());
-    $("#total_cart").html( totalCart() );
+    $("#total_price").html( totalCart() );
 }
 
 $("#show_cart").on("click", ".delete_item", function(event) {
