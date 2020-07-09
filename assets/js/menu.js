@@ -1,4 +1,4 @@
-$(".add_to_cart").click(function(event){      //Function to call the name and price from the string and give it a count of 1
+$(".add_to_cart").click(function (event) {      //Function to call the name and price from the string and give it a count of 1
     event.preventDefault();      // Prevent the links from doing their default behavious such as href links
     var name = $(this).attr("data-name");      // "this" respresents the link clicked on
     var price = Number($(this).attr("data-price"));
@@ -7,7 +7,7 @@ $(".add_to_cart").click(function(event){      //Function to call the name and pr
     displayCart();
 });
 
-$("#clear_cart").click(function(event){
+$("#clear_cart").click(function (event) {
     clearCart();
     displayCart();
 });
@@ -15,29 +15,23 @@ $("#clear_cart").click(function(event){
 function displayCart() { // Displays the cart contents on front end
     var cartArray = listCart();
     var output = "";
-    for (var i in cartArray) {
-        output += "<li>"
-            +cartArray[i].name
-            +" "+cartArray[i].count
-            +" x "+cartArray[i].price
-            +" = "+cartArray[i].total
-            +" <button class='delete_item' data-name='"
-            +cartArray[i].name+"'>X</button>"
-            +"</li>";
+    for (let i in cartArray) {
+        output += `<div class="row"><div class="col-5">${cartArray[i].name}</div><div class="col-2">${cartArray[i].count}</div><div class="col-2">${cartArray[i].price}</div><div class="col-2">${cartArray[i].total}</div><div class="col-1"><button class='delete_item' data-name='${cartArray[i].name}'>X</button></div></div></li>`;
     }
 
-    $("#item_name").html(cartArray[i].name);
-    $("#item_count").html(cartArray[i].count);
-    $("#item_price").html(cartArray[i].price.toFixed(2));
-    $("#items_total").html(cartArray[i].total.toFixed(2));
+    $("#order_details_row").html(output)
+    // $("#item_name").html(cartArray[i].name);
+    // $("#item_count").html(cartArray[i].count);
+    // $("#item_price").html(cartArray[i].price.toFixed(2));
+    // $("#items_total").html(cartArray[i].total);
     //$(".trash").html(<button class='delete_item' data-name='"cartArray[i].name"'>X</button>);
 
-    $("#show_cart").html(output);
-    $("#total_items").html( countCart());
-    $("#total_price").html( totalCart() );
+    // $("#show_cart").html(output);
+    $("#total_items").html(countCart());
+    $("#total_price").html(totalCart());
 }
 
-$("#show_cart").on("click", ".delete_item", function(event) {
+$("#show_cart").on("click", ".delete_item", function (event) {
     var name = $(this).attr("data-name");
     removeItemFromCartAll(name);
     displayCart();
@@ -55,8 +49,8 @@ var Item = function (name, price, count) {
 
 function addItemToCart(name, price, count) {
     for (var i in cart) { // Loop to check cart contents. 
-        if (cart[i].name === name){ // Matches by name
-            cart[i].count ++; // If an item is already in the cart, it increases the count by 1.   .cart[i].count += count; This could work for sausage rolls as they are sold in 3's
+        if (cart[i].name === name) { // Matches by name
+            cart[i].count++; // If an item is already in the cart, it increases the count by 1.   .cart[i].count += count; This could work for sausage rolls as they are sold in 3's
             // saveCart();    Part of local storage
             return;
         }
@@ -66,11 +60,11 @@ function addItemToCart(name, price, count) {
     // saveCart();    Part of local storage
 }
 
-function removeItemFromCart(name){ // To remove a single item, for example remove one tea
+function removeItemFromCart(name) { // To remove a single item, for example remove one tea
     for (var i in cart) {
-        if (cart[i].name === name){
-            cart[i].count --; //reduces count by 1
-            if (cart[i].count === 0){ // Prevents count from being a negative number
+        if (cart[i].name === name) {
+            cart[i].count--; //reduces count by 1
+            if (cart[i].count === 0) { // Prevents count from being a negative number
                 cart.splice(i, 1); // If the count is 0, that item is removed from the cart array
             }
             break;
@@ -81,7 +75,7 @@ function removeItemFromCart(name){ // To remove a single item, for example remov
 
 function removeItemFromCartAll(name) { // To remove all of a particular item, for example remove all teas
     for (var i in cart) {
-        if (cart[i].name === name){
+        if (cart[i].name === name) {
             cart.splice(i, 1);
         }
         break;
@@ -89,14 +83,14 @@ function removeItemFromCartAll(name) { // To remove all of a particular item, fo
     // saveCart();    Part of local storage
 }
 
-function clearCart(){ // empties entire cart
-    cart=[];
+function clearCart() { // empties entire cart
+    cart = [];
     // saveCart();    Part of local storage
-} 
+}
 
 function countCart() { // counts total number of items in cart by adding the total of the counts
     var totalCount = 0; //Goes outside the loop so that the count starts at 0 only once....I think
-    for (var i in cart){
+    for (var i in cart) {
         totalCount += cart[i].count;
     }
     return totalCount;
@@ -104,8 +98,8 @@ function countCart() { // counts total number of items in cart by adding the tot
 
 function totalCart() { // counts total cost of all items in cart by adding the total of the prices
     var totalCost = 0; //Goes outside the loop so that the count starts at 0 only once....I think
-    for (var i in cart){
-        totalCost += cart[i].price * cart[i].count;     
+    for (var i in cart) {
+        totalCost += cart[i].price * cart[i].count;
     }
     return totalCost.toFixed(2);
 }
@@ -136,66 +130,58 @@ function loadCart() { // if navigate away and come back, it reloads the cart
 //loadCart(); All local storage stuff*/
 //displayCart();
 
+// LOGIC TO SEND HTTP REQUEST
+function sendHttpRequest(method, url, data) {
+    const promise = new Promise((resolve, reject) => {
+        const xhr = new XMLHttpRequest();
+        xhr.open(method, url);
+        xhr.responseType = 'json';
+        xhr.onload = function () {
+            resolve(xhr.response);
+        };
+        xhr.send(JSON.stringify(data));
+    })
+    return promise
+}
 
+// VARIABLES TO GRAB RADIO BUTTONS
+const tenMin = document.getElementById('10min');
+const fifteenMin = document.getElementById('15min');
+const twentyMin = document.getElementById('20min');
+const thirtyMin = document.getElementById('30min');
 
+// FUNCTION TO BE EXECUTED UPON CLICKING SUBMIT
+const submitOrder = () => {
 
+    // CHECK REQUIRED COLLECTION TIME
+    let collectionTime;
+    const getCollectionTime = () => {
+        if (tenMin.checked) {
+            collectionTime = 10;
+        } else if (fifteenMin.checked) {
+            collectionTime = 15;
+        } else if (twentyMin.checked) {
+            collectionTime = 20;
+        } else { collectionTime = 30 }
+        return collectionTime
+    }
 
-// Drinks Variables
-const espressoSmInput = document.querySelector("#espresso-sm");
-const espressoLgInput = document.querySelector("#espresso-lg");
-const americanoSmInput = document.querySelector("#americano-sm");
-const americanoLgInput = document.querySelector("#americano-lg");
-const macchiatoSmInput = document.querySelector("#macchiato-sm");
-const macchiatoLgInput = document.querySelector("#macchiato-lg");
-const mochaSmInput = document.querySelector("#mocha-sm");
-const mochaLgInput = document.querySelector("#mocha-lg");
-const cappucinoSmInput = document.querySelector("#cappucino-sm");
-const cappucinoLgInput = document.querySelector("#cappucino-lg");
-const flatWhiteSmInput = document.querySelector("#flat-white-sm");
-const flatWhiteLgInput = document.querySelector("#flat-white-lg");
-const latteSmInput = document.querySelector("#latte-sm");
-const latteLgInput = document.querySelector("#latte-lg");
-const tigerEyeSmInput = document.querySelector("#tiger-eye-sm");
-const tigerEyeLgInput = document.querySelector("#tiger-eye-lg");
-const teaSmInput = document.querySelector("#tea-sm");
-const teaLgInput = document.querySelector("#tea-lg");
+    // CREATE ORDER OBJECT TO MERGE CART AND COLLECTION TIME
+    let order = {
+        cart: cart,
+        collectionTime: getCollectionTime(),
+    };
 
-// Food Variables
-const fruitSconeInput = document.querySelector("#fruit-scone");
-const carrotCakeInput = document.querySelector("#carrot-cake");
-const danishInput = document.querySelector("#danish");
-const sausageRollInput = document.querySelector("#sausage-roll");
-const proteinBarInput = document.querySelector("#protein-bar");
-const cheeseToastyInput = document.querySelector("#cheese-toasty");
+    // SEND HTTP REQUEST WITH DUMMY URL
+    sendHttpRequest('POST', '#', order);
 
-let order;
+    // UPDATE UI
+    const orderSection = document.getElementById('order_section');
+    orderSection.innerHTML = `<h2>Order Submitted</h2><p>Your order will be ready in ${collectionTime} minutes`
 
+}
 
-// document.addEventListener(onkeypress, (() => {
-//   order = {
-//     espressoSm: espressoSmInput,
-//     espressoLg: espressoLgInput,
-//     americanoSm: americanoSmInput,
-//     americanoLg: americanoLgInput,
-//     macchiatoSm: macchiatoSmInput,
-//     macchiatoLg: macchiatoLgInput,
-//     mochaSm: mochaSmInput,
-//     mochaLg: mochaLgInput,
-//     cappucinoSm: cappucinoSmInput,
-//     cappucinoLg: cappucinoLgInput,
-//     flatWhiteSm: flatWhiteSmInput,
-//     flatWhiteLg: flatWhiteLgInput,
-//     latteSm: latteSmInput,
-//     latteLg: latteLgInput,
-//     tigerEyeSm: tigerEyeSmInput,
-//     tigerEyeLg: tigerEyeLgInput,
-//     teaSm: teaSmInput,
-//     teaLg: teaLgInput,
-//     fruitScone: fruitSconeInput,
-//     carrotCake: carrotCakeInput,
-//     danish: danishInput,
-//     sausageRoll: sausageRollInput,
-//     proteinBar: proteinBarInput,
-//     cheeseToasty: cheeseToastyInput,
-//   }
-// }))
+// ORDER BUTTON VARIABLE AND EVENT LISTENER
+const orderButton = document.getElementById('submit-order');
+orderButton.addEventListener('click', submitOrder)
+
