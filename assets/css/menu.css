@@ -255,3 +255,8 @@ div>h5 {
 #order_section h2{
     color: white;
 }
+
+.delete_item {
+    background-color: var(--yellow);
+    color: var(--white);
+}
