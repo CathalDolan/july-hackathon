@@ -445,3 +445,9 @@ footer p{
     font-weight: 700;
     cursor: pointer;
 }
+
+.home_text {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
