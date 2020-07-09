@@ -234,3 +234,24 @@ div>h5 {
 .order_button.row_container {
     text-align: center;
 }
+
+#order_details_row{
+    color:white;
+    padding: 0;
+    overflow: visible;
+}
+
+#order_details_row div{
+    padding: 0;
+}
+
+.time-selection{
+    color: white;
+}
+
+#order_section {
+    text-align: center;
+}
+#order_section h2{
+    color: white;
+}

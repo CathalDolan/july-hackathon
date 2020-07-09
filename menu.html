@@ -246,7 +246,8 @@
                     <div class="card-body row_container">
                         <div class="product_name_description_container">
                             <h2 class="yellow_text product_name">Fran's Mum's Fruit Scone</h2>
-                            <p class="white_text product_description">Our chef Fran has stolen his mum's amazing scone recipe. Shhh, don't tellher!</p>
+                            <p class="white_text product_description">Our chef Fran has stolen his mum's amazing scone
+                                recipe. Shhh, don't tellher!</p>
                         </div>
                         <div class="clear div-center price_div_left">
                             <h3 class="yellow_text price">
@@ -338,7 +339,8 @@
                     <div class="card-body row_container">
                         <div class="product_name_description_container">
                             <h2 class="yellow_text product_name">Ham & Cheese Toasty</h2>
-                            <p class="white_text product_description">Thick slices of Brady's ham, with Dubliner Cheddar,
+                            <p class="white_text product_description">Thick slices of Brady's ham, with Dubliner
+                                Cheddar,
                                 sandwiched between two thick slices of Brennan's bread.</p>
                         </div>
                         <div class="clear div-center price_div_left">
@@ -353,7 +355,7 @@
         </section>
 
         <!-- Order Container-->
-        <section>             
+        <section>
             <div id="order_section" class="section_container">
                 <form action="">
                     <div id="" class="">
@@ -423,36 +425,41 @@
                         <div id="time_container" class="container row_container">
 
                             <div class="row justify-content-md-center">
-                                <div class="time_col col-6"><input checked type="radio" id="10min" name="pickup"
-                                        value="10min">
-                                    <!-- col-xs-2 is what makes the buttons fill the available space -->
-            <label for="10min">10 minutes</label>
-            </div>
-            <div class="time_col col-6"><input type="radio" id="15min" name="pickup" value="15min">
-                <label for="15min">15 minutes</label>
+                                <div class="time_col col-6">
+                                    <input type="radio" name="time" id="10min"><label for="10min">10 minutes</label>
+                                </div>
+                                <div class="time_col col-6">
+                                    <input type="radio" name="time" id="15min"><label for="15min">15 minutes</label>
 
-            </div>
-            <div class="time_col col-6"><input type="radio" id="20min" name="pickup" value="20min">
-                <label for="20min">20 minutes</label>
+                                </div>
+                                <div class="time_col col-6">
+                                    <input type="radio" name="time" id="20min"><label for="20min">20 minutes</label>
 
-            </div>
-            <div class="time_col col-6"><input type="radio" id="30min" name="pickup" value="30min">
-                <label for="30min">30 Minutes</label>
-            </div>
-            </div>
+                                </div>
+                                <div class="time_col col-6">
+                                    <input type="radio" name="time" id="30min"><label for="30min">30 minutes</label>
+                                </div>
+                            </div>
 
-            </div>
+                        </div>
+
+                        <!-- <div id="time-selection">
+                            <input type="radio" name="time" id="10min"><label for="10min">10 minutes</label>
+                            <input type="radio" name="time" id="15min"><label for="15min">15 minutes</label>
+                            <input type="radio" name="time" id="20min"><label for="20min">20 minutes</label>
+                            <input type="radio" name="time" id="30min"><label for="30min">30 minutes</label>
+                        </div> -->
 
 
-            <div class="row_container">
-                <input type="time" id="appt" name="appt" class="floatR">
-                <p class="floatR">Or choose a time:</p>
-            </div>
-            <div class="order_button row_container">
-                <button type="button" class="btn">Order</button>
-            </div>
-            </div>
-            </form>
+                        <!-- <div class="row_container">
+                            <input type="time" id="appt" name="appt" class="floatR">
+                            <p class="floatR">Or choose a time:</p>
+                        </div> -->
+                        <div class="order_button row_container">
+                            <button id="submit-order" type="button" class="btn">Order</button>
+                        </div>
+                    </div>
+                </form>
             </div>
         </section>
 
