@@ -4,7 +4,7 @@
     margin: 0 auto;
 }
 .contact-container {
-    padding-top: 45px;
+    padding-top: 15px;
 }
 
 
@@ -97,4 +97,12 @@ padding-bottom: 0;
 .location-map {
     margin: 0 auto;
     border-radius: 5px;
+}
+
+footer {
+    height: 230px;
+}
+
+.footer-container {
+    height: 100%;
 }

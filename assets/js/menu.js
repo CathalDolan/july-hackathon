@@ -7,16 +7,20 @@ $(".add_to_cart").click(function (event) {      //Function to call the name and 
     displayCart();
 });
 
-$("#clear_cart").click(function (event) {
+/*$("#clear_cart").click(function (event) {
     clearCart();
     displayCart();
-});
+});*/
 
 function displayCart() { // Displays the cart contents on front end
     var cartArray = listCart();
     var output = "";
     for (let i in cartArray) {
-        output += `<div class="row"><div class="col-5">${cartArray[i].name}</div><div class="col-2">${cartArray[i].count}</div><div class="col-2">${cartArray[i].price}</div><div class="col-2">${cartArray[i].total}</div><div class="col-1"><button class='delete_item' data-name='${cartArray[i].name}'>X</button></div></div></li>`;
+        output += `<div class="row"><div class="col-5">
+        ${cartArray[i].name}</div><div class="col-2">
+        ${cartArray[i].count}</div><div class="col-2">
+        ${cartArray[i].price}</div><div class="col-2">
+        ${cartArray[i].total}</div><div class="col-1"><button class='delete_item' data-name='${cartArray[i].name}'>X</button></div></div>`;
     }
 
     $("#order_details_row").html(output)
@@ -31,7 +35,7 @@ function displayCart() { // Displays the cart contents on front end
     $("#total_price").html(totalCart());
 }
 
-$("#show_cart").on("click", ".delete_item", function (event) {
+$("#order_details_row").on("click", ".delete_item", function (event) {
     var name = $(this).attr("data-name");
     removeItemFromCartAll(name);
     displayCart();
@@ -183,5 +187,5 @@ const submitOrder = () => {
 
 // ORDER BUTTON VARIABLE AND EVENT LISTENER
 const orderButton = document.getElementById('submit-order');
-orderButton.addEventListener('click', submitOrder)
+orderButton.addEventListener('click', submitOrder);
 

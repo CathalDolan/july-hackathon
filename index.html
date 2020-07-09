@@ -11,6 +11,7 @@
 
 	<link rel="stylesheet" href="assets/css/style.css" />
 	<script src="assets/js/app.js" defer></script>
+    <script src="assets/js/quick_order.js" defer></script>
 
 	<title>Yellow Bourbon</title>
 </head>
@@ -64,21 +65,28 @@
 		<section>
 			<div id="quick-order" class="container">
 				<div class="row">
-					<div class="col">
-						<form action=""><label for="quick-order-select">Quick Order</label>
-							<select name="quick-order-select" id="quick-order-select">
-              <option value="flat-white">Flat White</option>
-              <option value="americano">Americano</option>
-              <option value="black-tea">Black Tea</option>
-              <option value="espresso">Espresso</option>
-            </select>
-							<input checked type="radio" id="6oz" name="qo-size" value="6oz">
-							<label for="6oz">6oz</label>
-							<input type="radio" id="8oz" name="qo-size" value="8oz">
-							<label for="8oz">8oz</label>
-							<label for="q-o-name">Name:</label>
-							<input type="text" name="name" id="q-o-name" required>
-							<button id="q-o-btn" type="submit">Order</button>
+					<div class="col quick_order_row">
+						<form class="quick_order_form" action=""><label for="quick-order-select">Quick Order</label>
+                            <div>
+                                <select name="quick-order-select" id="quick-order-select">
+                                    <option value="flat-white">Espresso</option>
+                                    <option value="americano">Americano</option>
+                                    <option value="macchiato">Macchiato</option>
+                                    <option value="mocha">Mocha</option>
+                                    <option value="cappucino">Cappucino</option>
+                                    <option value="flat-white">Flat White</option>
+                                    <option value="latte">Latte</option>
+                                    <option value="tyiger_eye">Tiger Eye</option>
+                                    <option value="tea">Tea</option>
+                                </select>
+                            </div>
+                            <div>
+                                <input checked type="radio" id="6oz" name="qo-size" value="6oz">
+                                <label for="6oz">6oz</label>
+                                <input type="radio" id="8oz" name="qo-size" value="8oz">
+                                <label for="8oz">8oz</label>
+                            </div>
+							<button id="q-o-btn" >Order</button>
 						</form>
 					</div>
 				</div>
@@ -97,7 +105,7 @@
 							tasty
 							cake selection.</p>
 					</div>
-					<div class="col-12 col-md-5">
+					<div class="col-12 col-md-5  home_text">
 						<img src="assets/images/cafe_front.jpg" alt="Cafe Front">
           </div>
 
@@ -106,7 +114,7 @@
 				<hr>
 				<div class="container">
 					<div class="row">
-						<div class="col-12 col-md-5">
+						<div class="col-12 col-md-5 home_text">
 							<img class="home-images" src="assets/images/roasting.jpg" alt="Roasting coffee beans">
           </div>
 							<div class="col-12 col-md-7 roastery-text home_text">
@@ -139,7 +147,7 @@
               2 min walk from The English Market
               Address: 2 French Church St, Centre, Cork, T12 E94K, Ireland</p>
 							</div>
-							<div class="col-12 col-md-5">
+							<div class="col-12 col-md-5 home_text">
 								<img id="cafe_interior" src="assets/images/cafe_interior.jpg" alt="Cafe interior">
           </div>
 

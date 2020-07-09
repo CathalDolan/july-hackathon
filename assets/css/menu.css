@@ -4,13 +4,13 @@ div.section_container { /* Over rides the styling in styles.css */
     overflow: hidden; 
 }
 
-
-footer{
-    top: 155px;
-}
 .card-header {
     padding: 0;
     margin-bottom: 0.5rem;
+}
+
+#header_section_drinks {
+    margin-top: 0.5rem;
 }
 
 .pointer {
@@ -254,4 +254,13 @@ div>h5 {
 }
 #order_section h2{
     color: white;
+}
+
+.delete_item {
+    background-color: var(--yellow);
+    color: var(--white);
+}
+
+.add_to_cart {
+    margin-top: 8px;
 }
