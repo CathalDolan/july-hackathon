@@ -187,5 +187,5 @@ const submitOrder = () => {
 
 // ORDER BUTTON VARIABLE AND EVENT LISTENER
 const orderButton = document.getElementById('submit-order');
-orderButton.addEventListener('click', submitOrder)
+orderButton.addEventListener('click', submitOrder);
 

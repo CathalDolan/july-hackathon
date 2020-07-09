@@ -98,3 +98,11 @@ padding-bottom: 0;
     margin: 0 auto;
     border-radius: 5px;
 }
+
+footer {
+    height: 230px;
+}
+
+.footer-container {
+    height: 100%;
+}

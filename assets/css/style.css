@@ -9,9 +9,8 @@
 
 html {
     min-width: 300px;
-
+    background-color: var(--yellow);
 }
-
 
 
 .container{
@@ -327,6 +326,19 @@ hr{
     text-align: right;
 }
 
+.quick_order_form {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+}
+@media (min-width: 592px){
+    .quick_order_form {
+        grid-template-rows:1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        align-items: center;
+    }
+}
+
 #quick-order{
     margin-bottom: 15px;
     background-color: var(--grey);
@@ -347,6 +359,8 @@ hr{
     background-color: var(--yellow);
     color: var(--grey);
     border: none;
+    width: 85px;
+    margin: 0 auto;
 }
 
 .container{
