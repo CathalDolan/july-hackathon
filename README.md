@@ -1,6 +1,6 @@
 # july-hackathon - **Yellow Bourbon** :coffee:
 
-[View Live Project Here](###)
+[View Live Project Here](https://bryansmullen.github.io/july-hackathon/)
 
 **july-hackathon** is an application used by a local coffe shop called **Yellow Bourbon** to allow its customers to order coffee and snacks online and collect them at the shop. It also gives their customers a chance to contact the shop by using a contact  form. This project has been developed for the purpose of a **CodeIinstitute July hackathon** competition by a group of 6 student developers.
 
@@ -117,7 +117,7 @@ Color palette cna be viewed [here](https://coolors.co/f2b10a-343434-fafafa)
 **Images**
 
 Images for this project were sourced from other webistes. Due to the purpose of this project being a contender in a closed competition we used copyright images.
-**Sources**
+##### Sources
  * [Cafee front](https://www.pinterest.co.uk/pin/241505598743043689/)
  * [Cofee beans](https://www.wallsauce.com/eu/wall-murals-wallpaper/coffee-beans-mural-wallpaper)
  * [Roasting coffee](https://gearpatrol.com/2016/01/12/understanding-the-finer-points-of-coffee-bean-roast/)
@@ -125,9 +125,14 @@ Images for this project were sourced from other webistes. Due to the purpose of 
 
 
 ### Wireframes :straight_ruler:
-Wireframes were first created using [Balsamiq](https://balsamiq.com/) to get a general set up of pages in the project. Later during the developement process [Cathal Dolan](https://github.com/CathalDolan) created a more live wireframes for each device size, using Corel Draw.
+Wireframes were first created using [Balsamiq](https://balsamiq.com/) to get a general set up of pages in the project. Later during the developement process [Cathal Dolan](https://github.com/CathalDolan) created a more live wireframes for each device size, using Corel Draw. Wireframe pdf file can be found [here](https://github.com/bryansmullen/july-hackathon/blob/master/assets/images/wireframes/yellow_bourbon_-_wireframesd_v1.1.pdf)
 
 ### Features :abacus:
+**Features that have been developed**
+* Quick order option on top of every page
+* Order total at the bottom of the menu page
+* Visible feedback when hovering over social media icons in the footer
+* Contact form 
 
 ### Technologies Used :computer:
 
@@ -145,7 +150,7 @@ Wireframes were first created using [Balsamiq](https://balsamiq.com/) to get a g
 * [Google Maps](https://www.google.com/maps/)
 * [Google Fonts](https://fonts.google.com/)
 * [Balsamiq](https://balsamiq.com/)
-* [AmIresponsive](http://ami.responsivedesign.is/) - used to generate multi screen view of the webiste on different devices
+* [CorelDRAW](https://www.coreldraw.com/en/?link=wm)
 
 ### Testing :magnet:
 ### Bugs :mosquito:
